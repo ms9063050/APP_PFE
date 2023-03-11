@@ -44,6 +44,7 @@ def entropie(file_path):
         print('Code section appears normal')
 
 # Anti-debugger  ~ Narimene
+
 # Anti-vm  ~ Narimene
 
 def Obsufuctions_Analysis():
