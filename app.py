@@ -2,6 +2,9 @@ from flask import Flask, render_template, Blueprint, request, current_app
 from werkzeug.utils import secure_filename
 from scripts.static_create_files_to_analyse import Extract_informations
 from scripts.delete_files_created_before import delete_all
+from scripts.signature_analysis import start_signature_analysis
+from scripts.machine_learning_test import start_ml_analysis
+from scripts.obsufuctions import Obsufuctions_Analysis
 import os, time
 
 app = Flask(__name__)
@@ -24,7 +27,7 @@ def results():
 @app.route("/full_scans")
 def full_scans():
     return render_template("full_scan.html")
-	
+
 @app.route('/upload', methods = ['POST'])  
 def upload():
     files = request.files.getlist("file")
@@ -36,12 +39,20 @@ def upload():
         f.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
     # EXTRACT THE INFORMATIONS
     Extract_informations()
+    #time.sleep(10)
     # ANALYSIS
+    start_signature_analysis()
+    # Analyse prediction only file systeme
+    start_ml_analysis()
+    # obsufuctions
+    Obsufuctions_Analysis()
     
     # WRITE IN THE DATABASE THE RESULTS AND DISPLAY TO THE USER
 
     # DELETE THE EXTRACT INFO + UPLOADS FILES
-    #delete_all()
+    delete_all()
     return render_template("results.html", file = data)
 if __name__ == '__main__':
     app.run(debug=True,port=8000)
+
+#Copyright 02-25-2023 ~ Boussoura Mohamed Cherif & Houanti Narimene

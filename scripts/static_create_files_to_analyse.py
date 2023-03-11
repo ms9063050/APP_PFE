@@ -5,6 +5,7 @@ import datetime
 import pefile
 import hashlib
 import string
+import re
 
 now = datetime.datetime.now()
 
@@ -49,6 +50,69 @@ def md5sum(file_path, blocksize=65536):
             hash.update(block)
     return hash.hexdigest()
 
+def hash_file_if_is_not_a_file_system(file_path):
+    
+    hash_file = md5sum(file_path)
+    return {"md5Hash" : hash_file}
+
+def find_bitcoin (pe):
+    
+    # Find the section that contains the Bitcoin address
+    section = pe.sections[-1] # assume the address is in the last section
+    data = section.get_data()
+
+    # Use regular expressions to find the Bitcoin address in the data
+    pattern = re.compile(b'[13][a-km-zA-HJ-NP-Z0-9]{26,33}')
+    match = pattern.search(data)
+
+    if match:
+        # Convert the Bitcoin address to a binary format
+        address = match.group()
+        binary_address = binascii.unhexlify(hashlib.new('ripemd160', 
+            hashlib.sha256(binascii.unhexlify('00' + address)).digest()).hexdigest())
+
+        return 1
+    else:
+        return 0
+
+def get_debug_rva(pe):
+    # Get the debug directory
+    debug_dir_rva = pe.OPTIONAL_HEADER.DATA_DIRECTORY[pefile.DIRECTORY_ENTRY['IMAGE_DIRECTORY_ENTRY_DEBUG']].VirtualAddress
+    debug_dir_size = pe.OPTIONAL_HEADER.DATA_DIRECTORY[pefile.DIRECTORY_ENTRY['IMAGE_DIRECTORY_ENTRY_DEBUG']].Size
+
+    # Check if the debug directory is valid
+    if debug_dir_rva == 0 or debug_dir_size == 0:
+        return 0
+        print("No debug directory found.")
+    else:
+        # Get the debug directory entry
+        debug_entry = pe.get_section_by_rva(debug_dir_rva)
+
+        # Get the DebugRVA from the debug directory entry
+        debug_rva = debug_entry.VirtualAddress
+
+        #print("DebugRVA:", hex(debug_rva))
+        return debug_rva
+
+def get_IatVRA(pe):
+    # Get the IAT directory
+    iat_dir_rva = pe.OPTIONAL_HEADER.DATA_DIRECTORY[pefile.DIRECTORY_ENTRY['IMAGE_DIRECTORY_ENTRY_IMPORT']].VirtualAddress
+    iat_dir_size = pe.OPTIONAL_HEADER.DATA_DIRECTORY[pefile.DIRECTORY_ENTRY['IMAGE_DIRECTORY_ENTRY_IMPORT']].Size
+
+    # Check if the IAT directory is valid
+    if iat_dir_rva == 0 or iat_dir_size == 0:
+        print("No IAT directory found.")
+        return 0
+    else:
+        # Get the IAT section
+        iat_section = pe.get_section_by_rva(iat_dir_rva)
+
+        # Get the IAT RVA from the section header
+        iat_rva = iat_section.VirtualAddress
+
+        #print("IAT RVA:", hex(iat_rva))
+        return iat_rva
+
 def extract_pe_info(file_path):
     with open(file_path, "rb") as file_content:
         pe= pefile.PE(data=file_content.read(), fast_load=True)
@@ -65,22 +129,30 @@ def extract_pe_info(file_path):
             function_exp.append(exp.name)
     except Exception as e:
             print (e)
-    pe_information = {"DATA_DIRECTORY" : pe.OPTIONAL_HEADER.DATA_DIRECTORY[6].Size,
-        "VirtualAddress" : pe.OPTIONAL_HEADER.DATA_DIRECTORY[6].VirtualAddress,
+    pe_information = {
+        "Machine" : pe.FILE_HEADER.Machine,
+        "DebugSize" : pe.OPTIONAL_HEADER.DATA_DIRECTORY[6].Size,
+        "DebugRVA" : get_debug_rva(pe),
+        #"VirtualAddress" : pe.OPTIONAL_HEADER.DATA_DIRECTORY[6].VirtualAddress,
         "MajorImageVersion" : pe.OPTIONAL_HEADER.MajorImageVersion,
-        "OSVersion" : pe.OPTIONAL_HEADER.MajorOperatingSystemVersion,
+        "MajorOSVersion" : pe.OPTIONAL_HEADER.MajorOperatingSystemVersion,
+        #"OSVersion" : pe.OPTIONAL_HEADER.MajorOperatingSystemVersion,
         "ExportRVA" : pe.OPTIONAL_HEADER.DATA_DIRECTORY[0].VirtualAddress,
         "ExportSize" : pe.OPTIONAL_HEADER.DATA_DIRECTORY[0].Size,
-        "IATRVA" : pe.OPTIONAL_HEADER.DATA_DIRECTORY[12].VirtualAddress,
-        "ResSize" : pe.OPTIONAL_HEADER.DATA_DIRECTORY[2].Size,
-        "LinkerVersion" : pe.OPTIONAL_HEADER.MajorLinkerVersion,
-        "VirtualSize2" : pe.sections[1].Misc_VirtualSize,
+        "IatVRA": get_IatVRA(pe),
+        #"IATRVA" : pe.OPTIONAL_HEADER.DATA_DIRECTORY[12].VirtualAddress,
+        #"ResSize" : pe.OPTIONAL_HEADER.DATA_DIRECTORY[2].Size,
+        "MajorLinkerVersion" : pe.OPTIONAL_HEADER.MajorLinkerVersion,
+        "MinorLinkerVersion" : pe.OPTIONAL_HEADER.MinorLinkerVersion,
+        #"VirtualSize2" : pe.sections[1].Misc_VirtualSize,
         "NumberOfSections" : pe.FILE_HEADER.NumberOfSections,
         "StackReserveSize" : pe.OPTIONAL_HEADER.SizeOfStackReserve,
-        "Dll" : pe.OPTIONAL_HEADER.SizeOfStackReserve,
-        "ImportFunctionCount" : countf,
-        "ImportFunctionMethodCount" : countm,
-        "ExportFunctions" : function_exp,
+        "DllCharacteristics" : pe.OPTIONAL_HEADER.DllCharacteristics,
+        "ResourceSize" : pe.OPTIONAL_HEADER.DATA_DIRECTORY[2].Size,
+        #"ImportFunctionCount" : countf,
+        #"ImportFunctionMethodCount" : countm,
+        #"ExportFunctions" : function_exp,
+        "BitcoinAddresses" : find_bitcoin(pe),
         "md5Hash" : md5sum(file_path)}
     file_content.close()
     return(pe_information)
@@ -117,7 +189,7 @@ def hexdump(file_path):
 
 def is_executable(file_path):
     _, ext = os.path.splitext(file_path)
-    if ext in ['.exe', '.dll', '.sys']:
+    if ext in ['.exe', '.dll', '.sys','.ocx','.pdb','.map','.res','.tlb','.manifest']:
         with open(file_path, 'rb') as f:
             header = f.read(2)
             if header == b'MZ':
@@ -135,10 +207,9 @@ def Extract_informations():
             except Exception as e:
                 print (e)
         else :
-            dataset.update({file_path : md5sum(file_path)})
+            dataset.update({file_path : hash_file_if_is_not_a_file_system(file_path)})
         hexdump(file_path)
         extract_Strings_from_file(file_path)
-        
         if len(dataset) != 0:
             create_Json_File(dataset)
-            
+#Copyright 02-25-2023 ~ Boussoura Mohamed Cherif & Houanti Narimene
