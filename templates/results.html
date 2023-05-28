@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="{{url_for ('static',filename = 'fontawesome/css/fontawesome.min.css')}}"> 
+    <link href="{{url_for ('static',filename = 'fontawesome/css/solid.min.css')}}"> 
+    <link href="{{url_for ('static',filename = 'fontawesome/css/all.css')}}"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for ('static',filename = 'style.css')}}">
+    <link rel="icon" href="{{url_for ('static',filename = 'logo-website.ico')}}" type="image/icon type">
+    <script src="{{url_for ('static',filename = 'script.js')}}"></script>
+    <title>Results</title>
+</head>
+<body>
+    <header name="header" id="header">
+        <center>
+            <a href="/">
+                <img id="image_logo" 
+                src="{{url_for ('static',filename = 'logo-website.png')}}" 
+                width="40" 
+                height="40" />
+            </a>
+        </center>
+    </header>
+    
+    <div name="separation">
+        <img id="image_sep" 
+                src="{{url_for ('static',filename = 'div.png')}}"
+                width="1519.5" 
+                height="183"
+                />
+    </div>
+    <div name="paragraph" >
+        <input type="hidden" id="anPageName" name="page" value="103_165" />
+        <div class="articletechnical-details">
+        <div class="div124">
+            <div class="div-1124">
+                    <div class="ransomware-analyst valign-text-middle">RANSOMWARE ANALYST</div>
+                    <center>
+                        <h1 class="title valign-text-middle">Results details</h1>
+                    </center>    
+            </div>
+            <div class="div-2124">
+            <div class="ransomware-container">
+            </div>
+            <div id='info_section'>
+                <section class="intro">
+                    <div class="bg-image h-100" style="background-color: #f5f7fa;">
+                        <div class="mask d-flex align-items-center h-100">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="card">
+                                <div class="card-body p-0">
+                                    <div class="table-responsive table-scroll" data-mdb-perfect-scrollbar="true" style="position: relative;height: 1300px;">
+                                    <p class="discover-ransomware valign-text-middle" id="zzz"> Details about file 
+                                        <table class="table table-striped mb-0" style="position: relative;height: 200px;">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        Size : <br>{{details[0]}} KB
+                                                    </td>
+                                                    <td>
+                                                        Hash : <br>{{details[1]}}
+                                                    </td>
+                                                    <td>
+                                                        Date : <br>{{details[3]}}
+                                                    </td>
+                                                    <td>
+                                                        Type : <br> 
+                                                        {% if details[2] == "exe" %}
+                                                            <img id="image_logo" 
+                                                                src="{{url_for ('static',filename = 'exe-file-format-variant.png')}}" 
+                                                                width="40" 
+                                                                height="40" />
+                                                        {% elif details[2] == "dll"%}
+                                                            <img id="image_logo" 
+                                                                src="{{url_for ('static',filename = 'dll-file-format-symbol.png')}}" 
+                                                                width="40" 
+                                                                height="40" />
+                                                        {% elif details[2] == "sys"%}
+                                                            <img id="image_logo" 
+                                                                    src="{{url_for ('static',filename = 'sys-file-format-symbol.png')}}" 
+                                                                    width="40" 
+                                                                    height="40" />
+                                                        {% elif details[2] == "zip"%}
+                                                            <img id="image_logo" 
+                                                                        src="{{url_for ('static',filename = 'zip-file-format.png')}}" 
+                                                                        width="40" 
+                                                                        height="40" />
+                                                        {% elif details[2] == "rar"%}
+                                                            <img id="image_logo" 
+                                                                            src="{{url_for ('static',filename = 'rar-file-format.png')}}" 
+                                                                            width="40" 
+                                                                            height="40" />
+                                                        {% elif details[2] == "py"%}
+                                                            <img id="image_logo" 
+                                                                    src="{{url_for ('static',filename = 'python-file.png')}}" 
+                                                                    width="40" 
+                                                                    height="40" />
+                                                        {% elif details[2] == "c" %}
+                                                            <img id="image_logo" 
+                                                                    src="{{url_for ('static',filename = 'python-file.png')}}" 
+                                                                    width="40" 
+                                                                    height="40" />
+                                                        {% else %}
+                                                            <img id="image_logo" 
+                                                                            src="{{url_for ('static',filename = 'js.png')}}" 
+                                                                            width="40" 
+                                                                            height="40" />
+                                                        {% endif %}
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </p>
+                                    <p class="discover-ransomware valign-text-middle" id="zzz"> Analysis 
+                                        <table class="table table-striped mb-0" id="ttable">
+                                            <tbody>
+                                                {% for s in data %}
+                                                <tr>
+                                                    <td>
+                                                        {{s}}
+                                                    </td>
+                                                    <td>
+                                                        {% if data[s] %}
+                                                            <a id="nnn"><img src="{{url_for ('static',filename = 'check.png')}}"  id="check-mark" width="15" height="15"> Undetected </a>
+                                                        {% else %}
+                                                            {% if s == "Behaviour_Detection" %}
+                                                                {% if desc["Behaviour_Detection"] == "Exception has been handle it, we can not found the file for the behaviour analysis OR the file probably be clean" %}
+                                                                    <a id="nnn"><img src="{{url_for ('static',filename = 'warning.png')}}"  id="check-mark" width="15" height="15"> Detected </a>  
+                                                                {% else %}
+                                                                    <a id="nnn"><img src="{{url_for ('static',filename = 'cross.png')}}"  id="check-mark" width="15" height="15"> Detected </a>
+                                                                {% endif %}
+                                                            {% else %}
+                                                                <a id="nnn"><img src="{{url_for ('static',filename = 'cross.png')}}"  id="check-mark" width="15" height="15"> Detected </a>
+                                                            {% endif %}
+                                                        {% endif %}
+                                                    </td>
+                                                    <td>
+                                                        <a id="aaa">{{desc[s]}}</a>
+                                                    </td>
+                                                    {%endfor%}
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </p>
+                                        <p class="discover-ransomware valign-text-middle" id="zzz"> More 
+                                            <table class="table table-striped mb-0" id="ttable" style="position: relative;height: 100px;">
+                                                <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <p>Do you want to download the report in <a href="/download_report"> PDF version ? </a> </p>
+                                                            </td>
+                                                        </tr>
+                                                </tbody>
+                                            </table>
+                                    </p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <footer name="footer">
+        <center>
+            <a href="/">
+                <img id="image_logo" 
+                    src="{{url_for ('static',filename = 'logo-website.png')}}" 
+                    width="40" 
+                    height="40" />
+            </a>
+            <div class="copyright valign-text-middle">© 2023 - Boussoura - Houanti</div>
+        </center>
+    </footer>
+</body>
+</html>

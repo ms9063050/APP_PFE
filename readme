@@ -1,0 +1,13 @@
+* just change the path where there're functions look like this : os.chdir or something use the a pathway
+* download 
+  - flask
+  - selenium
+  - google chrome in the vm machine
+  - pandas
+  - scikit learn
+  - pefile
+  - python-magic
+  - yara (from the github)
+  - matpolitlib
+  - mlxtend
+  - ...

@@ -1,0 +1,497 @@
+[Wed May 24 18:02:32.756084 2023] [wsgi:error] [pid 3741:tid 140319331256064] [remote 10.10.10.1:53448] mod_wsgi (pid=3741): Target WSGI script '/var/www/basic-flask-app/app.wsgi' cannot be loaded as Python module.
+[Wed May 24 18:02:32.756213 2023] [wsgi:error] [pid 3741:tid 140319331256064] [remote 10.10.10.1:53448] mod_wsgi (pid=3741): Exception occurred processing WSGI script '/var/www/basic-flask-app/app.wsgi'.
+[Wed May 24 18:02:32.862845 2023] [wsgi:error] [pid 3741:tid 140319331256064] [remote 10.10.10.1:53448] Traceback (most recent call last):
+[Wed May 24 18:02:32.862885 2023] [wsgi:error] [pid 3741:tid 140319331256064] [remote 10.10.10.1:53448]   File "/var/www/basic-flask-app/app.wsgi", line 7, in <module>
+[Wed May 24 18:02:32.862890 2023] [wsgi:error] [pid 3741:tid 140319331256064] [remote 10.10.10.1:53448]     with open(activate_this) as file_ :
+[Wed May 24 18:02:32.862907 2023] [wsgi:error] [pid 3741:tid 140319331256064] [remote 10.10.10.1:53448] PermissionError: [Errno 13] Permission denied: '/home/server/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/bin/activate_this.py'
+[Wed May 24 18:02:33.002761 2023] [wsgi:error] [pid 3741:tid 140319364826880] [remote 10.10.10.1:53451] mod_wsgi (pid=3741): Target WSGI script '/var/www/basic-flask-app/app.wsgi' cannot be loaded as Python module.
+[Wed May 24 18:02:33.002834 2023] [wsgi:error] [pid 3741:tid 140319364826880] [remote 10.10.10.1:53451] mod_wsgi (pid=3741): Exception occurred processing WSGI script '/var/www/basic-flask-app/app.wsgi'.
+[Wed May 24 18:02:33.002975 2023] [wsgi:error] [pid 3741:tid 140319364826880] [remote 10.10.10.1:53451] Traceback (most recent call last):
+[Wed May 24 18:02:33.003016 2023] [wsgi:error] [pid 3741:tid 140319364826880] [remote 10.10.10.1:53451]   File "/var/www/basic-flask-app/app.wsgi", line 7, in <module>
+[Wed May 24 18:02:33.003024 2023] [wsgi:error] [pid 3741:tid 140319364826880] [remote 10.10.10.1:53451]     with open(activate_this) as file_ :
+[Wed May 24 18:02:33.003047 2023] [wsgi:error] [pid 3741:tid 140319364826880] [remote 10.10.10.1:53451] PermissionError: [Errno 13] Permission denied: '/home/server/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/bin/activate_this.py'
+[Wed May 24 18:09:00.612914 2023] [wsgi:error] [pid 9956:tid 139809734551296] [remote 10.10.10.1:53887] mod_wsgi (pid=9956): Target WSGI script '/var/www/basic-flask-app/app.wsgi' cannot be loaded as Python module.
+[Wed May 24 18:09:00.613363 2023] [wsgi:error] [pid 9956:tid 139809734551296] [remote 10.10.10.1:53887] mod_wsgi (pid=9956): Exception occurred processing WSGI script '/var/www/basic-flask-app/app.wsgi'.
+[Wed May 24 18:09:00.620018 2023] [wsgi:error] [pid 9956:tid 139809734551296] [remote 10.10.10.1:53887] Traceback (most recent call last):
+[Wed May 24 18:09:00.620055 2023] [wsgi:error] [pid 9956:tid 139809734551296] [remote 10.10.10.1:53887]   File "/var/www/basic-flask-app/app.wsgi", line 7, in <module>
+[Wed May 24 18:09:00.620061 2023] [wsgi:error] [pid 9956:tid 139809734551296] [remote 10.10.10.1:53887]     with open(activate_this) as file_ :
+[Wed May 24 18:09:00.620077 2023] [wsgi:error] [pid 9956:tid 139809734551296] [remote 10.10.10.1:53887] PermissionError: [Errno 13] Permission denied: '/home/server/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/bin/activate_this.py'
+[Wed May 24 18:09:02.285539 2023] [wsgi:error] [pid 9956:tid 139809700980480] [remote 10.10.10.1:53888] mod_wsgi (pid=9956): Target WSGI script '/var/www/basic-flask-app/app.wsgi' cannot be loaded as Python module.
+[Wed May 24 18:09:02.285591 2023] [wsgi:error] [pid 9956:tid 139809700980480] [remote 10.10.10.1:53888] mod_wsgi (pid=9956): Exception occurred processing WSGI script '/var/www/basic-flask-app/app.wsgi'.
+[Wed May 24 18:09:02.285665 2023] [wsgi:error] [pid 9956:tid 139809700980480] [remote 10.10.10.1:53888] Traceback (most recent call last):
+[Wed May 24 18:09:02.285688 2023] [wsgi:error] [pid 9956:tid 139809700980480] [remote 10.10.10.1:53888]   File "/var/www/basic-flask-app/app.wsgi", line 7, in <module>
+[Wed May 24 18:09:02.285693 2023] [wsgi:error] [pid 9956:tid 139809700980480] [remote 10.10.10.1:53888]     with open(activate_this) as file_ :
+[Wed May 24 18:09:02.285717 2023] [wsgi:error] [pid 9956:tid 139809700980480] [remote 10.10.10.1:53888] PermissionError: [Errno 13] Permission denied: '/home/server/.local/share/virtualenvs/basic-flask-app-2sD0MLz9/bin/activate_this.py'
+[Wed May 24 18:29:35.509227 2023] [wsgi:error] [pid 27229:tid 139631164860160] [remote 10.10.10.1:63957] mod_wsgi (pid=27229): Target WSGI script '/var/www/basic-flask-app/app.wsgi' cannot be loaded as Python module.
+[Wed May 24 18:29:35.509326 2023] [wsgi:error] [pid 27229:tid 139631164860160] [remote 10.10.10.1:63957] mod_wsgi (pid=27229): Exception occurred processing WSGI script '/var/www/basic-flask-app/app.wsgi'.
+[Wed May 24 18:29:35.524824 2023] [wsgi:error] [pid 27229:tid 139631164860160] [remote 10.10.10.1:63957] Traceback (most recent call last):
+[Wed May 24 18:29:35.524875 2023] [wsgi:error] [pid 27229:tid 139631164860160] [remote 10.10.10.1:63957]   File "<string>", line 12, in <module>
+[Wed May 24 18:29:35.524895 2023] [wsgi:error] [pid 27229:tid 139631164860160] [remote 10.10.10.1:63957] NameError: name '__file__' is not defined
+[Wed May 24 18:29:35.524905 2023] [wsgi:error] [pid 27229:tid 139631164860160] [remote 10.10.10.1:63957] 
+[Wed May 24 18:29:35.524910 2023] [wsgi:error] [pid 27229:tid 139631164860160] [remote 10.10.10.1:63957] During handling of the above exception, another exception occurred:
+[Wed May 24 18:29:35.524914 2023] [wsgi:error] [pid 27229:tid 139631164860160] [remote 10.10.10.1:63957] 
+[Wed May 24 18:29:35.524920 2023] [wsgi:error] [pid 27229:tid 139631164860160] [remote 10.10.10.1:63957] Traceback (most recent call last):
+[Wed May 24 18:29:35.524936 2023] [wsgi:error] [pid 27229:tid 139631164860160] [remote 10.10.10.1:63957]   File "/var/www/basic-flask-app/app.wsgi", line 8, in <module>
+[Wed May 24 18:29:35.524941 2023] [wsgi:error] [pid 27229:tid 139631164860160] [remote 10.10.10.1:63957]     exec(file_.read(),dict(file=activate_this))
+[Wed May 24 18:29:35.524947 2023] [wsgi:error] [pid 27229:tid 139631164860160] [remote 10.10.10.1:63957]   File "<string>", line 14, in <module>
+[Wed May 24 18:29:35.524958 2023] [wsgi:error] [pid 27229:tid 139631164860160] [remote 10.10.10.1:63957] AssertionError: You must use exec(open(this_file).read(), {'__file__': this_file}))
+[Wed May 24 18:33:28.205347 2023] [wsgi:error] [pid 30277:tid 139957925603072] [remote 10.10.10.1:63971] mod_wsgi (pid=30277): Target WSGI script '/var/www/basic-flask-app/app.wsgi' cannot be loaded as Python module.
+[Wed May 24 18:33:28.205425 2023] [wsgi:error] [pid 30277:tid 139957925603072] [remote 10.10.10.1:63971] mod_wsgi (pid=30277): Exception occurred processing WSGI script '/var/www/basic-flask-app/app.wsgi'.
+[Wed May 24 18:33:28.205777 2023] [wsgi:error] [pid 30277:tid 139957925603072] [remote 10.10.10.1:63971] Traceback (most recent call last):
+[Wed May 24 18:33:28.205890 2023] [wsgi:error] [pid 30277:tid 139957925603072] [remote 10.10.10.1:63971]   File "/var/www/basic-flask-app/app.wsgi", line 6, in <module>
+[Wed May 24 18:33:28.205909 2023] [wsgi:error] [pid 30277:tid 139957925603072] [remote 10.10.10.1:63971]     from app import app as application
+[Wed May 24 18:33:28.205928 2023] [wsgi:error] [pid 30277:tid 139957925603072] [remote 10.10.10.1:63971]   File "/var/www/basic-flask-app/app.py", line 4, in <module>
+[Wed May 24 18:33:28.205933 2023] [wsgi:error] [pid 30277:tid 139957925603072] [remote 10.10.10.1:63971]     from scripts.signature_analysis import start_signature_analysis
+[Wed May 24 18:33:28.205944 2023] [wsgi:error] [pid 30277:tid 139957925603072] [remote 10.10.10.1:63971]   File "/var/www/basic-flask-app/scripts/signature_analysis.py", line 1, in <module>
+[Wed May 24 18:33:28.205948 2023] [wsgi:error] [pid 30277:tid 139957925603072] [remote 10.10.10.1:63971]     import pandas as pd
+[Wed May 24 18:33:28.205969 2023] [wsgi:error] [pid 30277:tid 139957925603072] [remote 10.10.10.1:63971] ModuleNotFoundError: No module named 'pandas'
+[Wed May 24 18:56:18.902949 2023] [wsgi:error] [pid 36671:tid 140630481815296] [remote 10.10.10.1:64558] [2023-05-24 18:41:43.653975]~ The Hexdump file has been created!
+[Wed May 24 18:56:19.163610 2023] [wsgi:error] [pid 36671:tid 140630481815296] [remote 10.10.10.1:64558] [2023-05-24 18:41:43.653975]~ The Strings file has been created!
+[Wed May 24 18:56:19.165321 2023] [wsgi:error] [pid 36671:tid 140630481815296] [remote 10.10.10.1:64558] [2023-05-24 18:56:19.165072]~ The JSON file has been created!
+[Wed May 24 18:56:43.936669 2023] [wsgi:error] [pid 36671:tid 140630481815296] [remote 10.10.10.1:64558] [2023-05-24 18:41:46.374039]~ The behaviour repport has been created!
+[Wed May 24 18:56:48.977267 2023] [wsgi:error] [pid 36671:tid 140630481815296] [remote 10.10.10.1:64558] [2023-05-24 18:41:46.470231]~ The Signature Analysis by YARA-Rule has been done successful!
+[Wed May 24 18:56:49.054039 2023] [wsgi:error] [pid 36671:tid 140630481815296] [remote 10.10.10.1:64558] [2023-05-24 18:41:44.408928]~ The Signature Analysis has been done successful!
+[Wed May 24 18:56:49.134213 2023] [wsgi:error] [pid 36671:tid 140630481815296] [remote 10.10.10.1:64558] [2023-05-24 18:56:49,059] ERROR in app: Exception on /upload [POST]
+[Wed May 24 18:56:49.134252 2023] [wsgi:error] [pid 36671:tid 140630481815296] [remote 10.10.10.1:64558] Traceback (most recent call last):
+[Wed May 24 18:56:49.134259 2023] [wsgi:error] [pid 36671:tid 140630481815296] [remote 10.10.10.1:64558]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Wed May 24 18:56:49.134264 2023] [wsgi:error] [pid 36671:tid 140630481815296] [remote 10.10.10.1:64558]     response = self.full_dispatch_request()
+[Wed May 24 18:56:49.134270 2023] [wsgi:error] [pid 36671:tid 140630481815296] [remote 10.10.10.1:64558]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Wed May 24 18:56:49.134275 2023] [wsgi:error] [pid 36671:tid 140630481815296] [remote 10.10.10.1:64558]     rv = self.handle_user_exception(e)
+[Wed May 24 18:56:49.134280 2023] [wsgi:error] [pid 36671:tid 140630481815296] [remote 10.10.10.1:64558]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Wed May 24 18:56:49.134286 2023] [wsgi:error] [pid 36671:tid 140630481815296] [remote 10.10.10.1:64558]     rv = self.dispatch_request()
+[Wed May 24 18:56:49.134291 2023] [wsgi:error] [pid 36671:tid 140630481815296] [remote 10.10.10.1:64558]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Wed May 24 18:56:49.134296 2023] [wsgi:error] [pid 36671:tid 140630481815296] [remote 10.10.10.1:64558]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Wed May 24 18:56:49.134302 2023] [wsgi:error] [pid 36671:tid 140630481815296] [remote 10.10.10.1:64558]   File "/var/www/basic-flask-app/app.py", line 97, in upload
+[Wed May 24 18:56:49.134307 2023] [wsgi:error] [pid 36671:tid 140630481815296] [remote 10.10.10.1:64558]     data["Signature"] = start_signature_analysis()
+[Wed May 24 18:56:49.134312 2023] [wsgi:error] [pid 36671:tid 140630481815296] [remote 10.10.10.1:64558]   File "/var/www/basic-flask-app/scripts/signature_analysis.py", line 47, in start_signature_analysis
+[Wed May 24 18:56:49.134318 2023] [wsgi:error] [pid 36671:tid 140630481815296] [remote 10.10.10.1:64558]     if not Ransomware_Detection_Based_File_Family(i,dic[i]['md5Hash']):
+[Wed May 24 18:56:49.134325 2023] [wsgi:error] [pid 36671:tid 140630481815296] [remote 10.10.10.1:64558] KeyError: 'md5Hash'
+[Wed May 24 18:56:49.134364 2023] [wsgi:error] [pid 36671:tid 140630481815296] [remote 10.10.10.1:64558] 
+[Wed May 24 18:56:49.163218 2023] [wsgi:error] [pid 36671:tid 140630237284096] Exception in thread Thread-1:
+[Wed May 24 18:56:49.163315 2023] [wsgi:error] [pid 36671:tid 140630237284096] Traceback (most recent call last):
+[Wed May 24 18:56:49.163325 2023] [wsgi:error] [pid 36671:tid 140630237284096]   File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+[Wed May 24 18:56:49.163333 2023] [wsgi:error] [pid 36671:tid 140630237284096]     self.run()
+[Wed May 24 18:56:49.163397 2023] [wsgi:error] [pid 36671:tid 140630237284096]   File "/usr/lib/python3.6/threading.py", line 864, in run
+[Wed May 24 18:56:49.163408 2023] [wsgi:error] [pid 36671:tid 140630237284096]     self._target(*self._args, **self._kwargs)
+[Wed May 24 18:56:49.163415 2023] [wsgi:error] [pid 36671:tid 140630237284096]   File "/var/www/basic-flask-app/app.py", line 71, in ml_analysis_task
+[Wed May 24 18:56:49.163421 2023] [wsgi:error] [pid 36671:tid 140630237284096]     data["ML"] = start_ml_analysis()
+[Wed May 24 18:56:49.163427 2023] [wsgi:error] [pid 36671:tid 140630237284096]   File "/var/www/basic-flask-app/scripts/machine_learning_test.py", line 153, in start_ml_analysis
+[Wed May 24 18:56:49.163435 2023] [wsgi:error] [pid 36671:tid 140630237284096]     df = pd.read_csv("./df_clear.csv")
+[Wed May 24 18:56:49.163442 2023] [wsgi:error] [pid 36671:tid 140630237284096]   File "/usr/local/lib/python3.6/dist-packages/pandas/io/parsers.py", line 688, in read_csv
+[Wed May 24 18:56:49.163449 2023] [wsgi:error] [pid 36671:tid 140630237284096]     return _read(filepath_or_buffer, kwds)
+[Wed May 24 18:56:49.163455 2023] [wsgi:error] [pid 36671:tid 140630237284096]   File "/usr/local/lib/python3.6/dist-packages/pandas/io/parsers.py", line 454, in _read
+[Wed May 24 18:56:49.163461 2023] [wsgi:error] [pid 36671:tid 140630237284096]     parser = TextFileReader(fp_or_buf, **kwds)
+[Wed May 24 18:56:49.163467 2023] [wsgi:error] [pid 36671:tid 140630237284096]   File "/usr/local/lib/python3.6/dist-packages/pandas/io/parsers.py", line 948, in __init__
+[Wed May 24 18:56:49.163474 2023] [wsgi:error] [pid 36671:tid 140630237284096]     self._make_engine(self.engine)
+[Wed May 24 18:56:49.163481 2023] [wsgi:error] [pid 36671:tid 140630237284096]   File "/usr/local/lib/python3.6/dist-packages/pandas/io/parsers.py", line 1180, in _make_engine
+[Wed May 24 18:56:49.163487 2023] [wsgi:error] [pid 36671:tid 140630237284096]     self._engine = CParserWrapper(self.f, **self.options)
+[Wed May 24 18:56:49.163493 2023] [wsgi:error] [pid 36671:tid 140630237284096]   File "/usr/local/lib/python3.6/dist-packages/pandas/io/parsers.py", line 2010, in __init__
+[Wed May 24 18:56:49.163499 2023] [wsgi:error] [pid 36671:tid 140630237284096]     self._reader = parsers.TextReader(src, **kwds)
+[Wed May 24 18:56:49.163505 2023] [wsgi:error] [pid 36671:tid 140630237284096]   File "pandas/_libs/parsers.pyx", line 382, in pandas._libs.parsers.TextReader.__cinit__
+[Wed May 24 18:56:49.163512 2023] [wsgi:error] [pid 36671:tid 140630237284096]   File "pandas/_libs/parsers.pyx", line 674, in pandas._libs.parsers.TextReader._setup_parser_source
+[Wed May 24 18:56:49.163519 2023] [wsgi:error] [pid 36671:tid 140630237284096] FileNotFoundError: [Errno 2] No such file or directory: './df_clear.csv'
+[Wed May 24 18:56:49.163551 2023] [wsgi:error] [pid 36671:tid 140630237284096] 
+[Wed May 24 18:59:56.239661 2023] [wsgi:error] [pid 36671:tid 140629860628224] [2023-05-24 18:59:56.239576]~ The prediction for new feature True
+[Wed May 24 19:17:17.124406 2023] [wsgi:error] [pid 55373:tid 140125760100096] [remote 10.10.10.1:64751] ERROR !!!
+[Wed May 24 19:17:17.124532 2023] [wsgi:error] [pid 55373:tid 140125760100096] [remote 10.10.10.1:64751] ERROR !!!
+[Wed May 24 19:17:17.132404 2023] [wsgi:error] [pid 55373:tid 140125760100096] [remote 10.10.10.1:64751] [2023-05-24 19:17:17,124] ERROR in app: Exception on /upload [POST]
+[Wed May 24 19:17:17.132501 2023] [wsgi:error] [pid 55373:tid 140125760100096] [remote 10.10.10.1:64751] Traceback (most recent call last):
+[Wed May 24 19:17:17.132516 2023] [wsgi:error] [pid 55373:tid 140125760100096] [remote 10.10.10.1:64751]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Wed May 24 19:17:17.132520 2023] [wsgi:error] [pid 55373:tid 140125760100096] [remote 10.10.10.1:64751]     response = self.full_dispatch_request()
+[Wed May 24 19:17:17.132524 2023] [wsgi:error] [pid 55373:tid 140125760100096] [remote 10.10.10.1:64751]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Wed May 24 19:17:17.132542 2023] [wsgi:error] [pid 55373:tid 140125760100096] [remote 10.10.10.1:64751]     rv = self.handle_user_exception(e)
+[Wed May 24 19:17:17.132546 2023] [wsgi:error] [pid 55373:tid 140125760100096] [remote 10.10.10.1:64751]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Wed May 24 19:17:17.132549 2023] [wsgi:error] [pid 55373:tid 140125760100096] [remote 10.10.10.1:64751]     rv = self.dispatch_request()
+[Wed May 24 19:17:17.132552 2023] [wsgi:error] [pid 55373:tid 140125760100096] [remote 10.10.10.1:64751]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Wed May 24 19:17:17.132555 2023] [wsgi:error] [pid 55373:tid 140125760100096] [remote 10.10.10.1:64751]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Wed May 24 19:17:17.132558 2023] [wsgi:error] [pid 55373:tid 140125760100096] [remote 10.10.10.1:64751]   File "/var/www/basic-flask-app/app.py", line 62, in upload
+[Wed May 24 19:17:17.132561 2023] [wsgi:error] [pid 55373:tid 140125760100096] [remote 10.10.10.1:64751]     generate_json(filename)   # generate the behavior report
+[Wed May 24 19:17:17.132564 2023] [wsgi:error] [pid 55373:tid 140125760100096] [remote 10.10.10.1:64751]   File "/var/www/basic-flask-app/scripts/behav.py", line 8181, in generate_json
+[Wed May 24 19:17:17.132567 2023] [wsgi:error] [pid 55373:tid 140125760100096] [remote 10.10.10.1:64751]     with open(json_file) as f:
+[Wed May 24 19:17:17.132575 2023] [wsgi:error] [pid 55373:tid 140125760100096] [remote 10.10.10.1:64751] TypeError: expected str, bytes or os.PathLike object, not NoneType
+[Wed May 24 19:17:17.132621 2023] [wsgi:error] [pid 55373:tid 140125760100096] [remote 10.10.10.1:64751] 
+[Wed May 24 19:20:44.313357 2023] [wsgi:error] [pid 58228:tid 140218132494080] [remote 10.10.10.1:64768] ERROR !!!
+[Wed May 24 19:20:44.313520 2023] [wsgi:error] [pid 58228:tid 140218132494080] [remote 10.10.10.1:64768] ERROR !!!
+[Wed May 24 19:20:44.317501 2023] [wsgi:error] [pid 58228:tid 140218132494080] [remote 10.10.10.1:64768] [2023-05-24 19:20:44,313] ERROR in app: Exception on /upload [POST]
+[Wed May 24 19:20:44.317574 2023] [wsgi:error] [pid 58228:tid 140218132494080] [remote 10.10.10.1:64768] Traceback (most recent call last):
+[Wed May 24 19:20:44.317585 2023] [wsgi:error] [pid 58228:tid 140218132494080] [remote 10.10.10.1:64768]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Wed May 24 19:20:44.317590 2023] [wsgi:error] [pid 58228:tid 140218132494080] [remote 10.10.10.1:64768]     response = self.full_dispatch_request()
+[Wed May 24 19:20:44.317594 2023] [wsgi:error] [pid 58228:tid 140218132494080] [remote 10.10.10.1:64768]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Wed May 24 19:20:44.317597 2023] [wsgi:error] [pid 58228:tid 140218132494080] [remote 10.10.10.1:64768]     rv = self.handle_user_exception(e)
+[Wed May 24 19:20:44.317601 2023] [wsgi:error] [pid 58228:tid 140218132494080] [remote 10.10.10.1:64768]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Wed May 24 19:20:44.317605 2023] [wsgi:error] [pid 58228:tid 140218132494080] [remote 10.10.10.1:64768]     rv = self.dispatch_request()
+[Wed May 24 19:20:44.317608 2023] [wsgi:error] [pid 58228:tid 140218132494080] [remote 10.10.10.1:64768]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Wed May 24 19:20:44.317612 2023] [wsgi:error] [pid 58228:tid 140218132494080] [remote 10.10.10.1:64768]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Wed May 24 19:20:44.317615 2023] [wsgi:error] [pid 58228:tid 140218132494080] [remote 10.10.10.1:64768]   File "/var/www/basic-flask-app/app.py", line 62, in upload
+[Wed May 24 19:20:44.317619 2023] [wsgi:error] [pid 58228:tid 140218132494080] [remote 10.10.10.1:64768]     generate_json(filename)   # generate the behavior report
+[Wed May 24 19:20:44.317631 2023] [wsgi:error] [pid 58228:tid 140218132494080] [remote 10.10.10.1:64768]   File "/var/www/basic-flask-app/scripts/behav.py", line 8181, in generate_json
+[Wed May 24 19:20:44.317635 2023] [wsgi:error] [pid 58228:tid 140218132494080] [remote 10.10.10.1:64768]     with open(json_file) as f:
+[Wed May 24 19:20:44.317642 2023] [wsgi:error] [pid 58228:tid 140218132494080] [remote 10.10.10.1:64768] TypeError: expected str, bytes or os.PathLike object, not NoneType
+[Wed May 24 19:20:44.317802 2023] [wsgi:error] [pid 58228:tid 140218132494080] [remote 10.10.10.1:64768] 
+[Thu May 25 07:45:02.322982 2023] [wsgi:error] [pid 67553:tid 140716720137984] [remote 10.10.10.1:62958] ERROR !!!
+[Thu May 25 07:45:02.323299 2023] [wsgi:error] [pid 67553:tid 140716720137984] [remote 10.10.10.1:62958] ERROR !!!
+[Thu May 25 07:45:02.336049 2023] [wsgi:error] [pid 67553:tid 140716720137984] [remote 10.10.10.1:62958] [2023-05-25 07:45:02,323] ERROR in app: Exception on /upload [POST]
+[Thu May 25 07:45:02.336193 2023] [wsgi:error] [pid 67553:tid 140716720137984] [remote 10.10.10.1:62958] Traceback (most recent call last):
+[Thu May 25 07:45:02.336216 2023] [wsgi:error] [pid 67553:tid 140716720137984] [remote 10.10.10.1:62958]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Thu May 25 07:45:02.336227 2023] [wsgi:error] [pid 67553:tid 140716720137984] [remote 10.10.10.1:62958]     response = self.full_dispatch_request()
+[Thu May 25 07:45:02.336248 2023] [wsgi:error] [pid 67553:tid 140716720137984] [remote 10.10.10.1:62958]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Thu May 25 07:45:02.336265 2023] [wsgi:error] [pid 67553:tid 140716720137984] [remote 10.10.10.1:62958]     rv = self.handle_user_exception(e)
+[Thu May 25 07:45:02.336715 2023] [wsgi:error] [pid 67553:tid 140716720137984] [remote 10.10.10.1:62958]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Thu May 25 07:45:02.336739 2023] [wsgi:error] [pid 67553:tid 140716720137984] [remote 10.10.10.1:62958]     rv = self.dispatch_request()
+[Thu May 25 07:45:02.336749 2023] [wsgi:error] [pid 67553:tid 140716720137984] [remote 10.10.10.1:62958]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Thu May 25 07:45:02.336771 2023] [wsgi:error] [pid 67553:tid 140716720137984] [remote 10.10.10.1:62958]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Thu May 25 07:45:02.336782 2023] [wsgi:error] [pid 67553:tid 140716720137984] [remote 10.10.10.1:62958]   File "/var/www/basic-flask-app/app.py", line 62, in upload
+[Thu May 25 07:45:02.336797 2023] [wsgi:error] [pid 67553:tid 140716720137984] [remote 10.10.10.1:62958]     generate_json(filename)   # generate the behavior report
+[Thu May 25 07:45:02.336812 2023] [wsgi:error] [pid 67553:tid 140716720137984] [remote 10.10.10.1:62958]   File "/var/www/basic-flask-app/scripts/behav.py", line 8181, in generate_json
+[Thu May 25 07:45:02.336825 2023] [wsgi:error] [pid 67553:tid 140716720137984] [remote 10.10.10.1:62958]     with open(json_file) as f:
+[Thu May 25 07:45:02.336915 2023] [wsgi:error] [pid 67553:tid 140716720137984] [remote 10.10.10.1:62958] TypeError: expected str, bytes or os.PathLike object, not NoneType
+[Thu May 25 07:45:02.337236 2023] [wsgi:error] [pid 67553:tid 140716720137984] [remote 10.10.10.1:62958] 
+[Thu May 25 07:47:10.892121 2023] [wsgi:error] [pid 69823:tid 139657995638528] [remote 10.10.10.1:62975] [2023-05-25 07:47:10,886] ERROR in app: Exception on /upload [POST]
+[Thu May 25 07:47:10.892476 2023] [wsgi:error] [pid 69823:tid 139657995638528] [remote 10.10.10.1:62975] Traceback (most recent call last):
+[Thu May 25 07:47:10.892523 2023] [wsgi:error] [pid 69823:tid 139657995638528] [remote 10.10.10.1:62975]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Thu May 25 07:47:10.892549 2023] [wsgi:error] [pid 69823:tid 139657995638528] [remote 10.10.10.1:62975]     response = self.full_dispatch_request()
+[Thu May 25 07:47:10.892586 2023] [wsgi:error] [pid 69823:tid 139657995638528] [remote 10.10.10.1:62975]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Thu May 25 07:47:10.892609 2023] [wsgi:error] [pid 69823:tid 139657995638528] [remote 10.10.10.1:62975]     rv = self.handle_user_exception(e)
+[Thu May 25 07:47:10.892631 2023] [wsgi:error] [pid 69823:tid 139657995638528] [remote 10.10.10.1:62975]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Thu May 25 07:47:10.892652 2023] [wsgi:error] [pid 69823:tid 139657995638528] [remote 10.10.10.1:62975]     rv = self.dispatch_request()
+[Thu May 25 07:47:10.892673 2023] [wsgi:error] [pid 69823:tid 139657995638528] [remote 10.10.10.1:62975]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Thu May 25 07:47:10.892695 2023] [wsgi:error] [pid 69823:tid 139657995638528] [remote 10.10.10.1:62975]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Thu May 25 07:47:10.892716 2023] [wsgi:error] [pid 69823:tid 139657995638528] [remote 10.10.10.1:62975]   File "/var/www/basic-flask-app/app.py", line 57, in upload
+[Thu May 25 07:47:10.892738 2023] [wsgi:error] [pid 69823:tid 139657995638528] [remote 10.10.10.1:62975]     f.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+[Thu May 25 07:47:10.892759 2023] [wsgi:error] [pid 69823:tid 139657995638528] [remote 10.10.10.1:62975]   File "/usr/local/lib/python3.6/dist-packages/werkzeug/datastructures.py", line 3021, in save
+[Thu May 25 07:47:10.892780 2023] [wsgi:error] [pid 69823:tid 139657995638528] [remote 10.10.10.1:62975]     dst = open(dst, "wb")
+[Thu May 25 07:47:10.892806 2023] [wsgi:error] [pid 69823:tid 139657995638528] [remote 10.10.10.1:62975] PermissionError: [Errno 13] Permission denied: '/var/www/basic-flask-app/static/uploads/ChromeSetup.exe'
+[Thu May 25 07:47:10.892886 2023] [wsgi:error] [pid 69823:tid 139657995638528] [remote 10.10.10.1:62975] 
+[Thu May 25 07:51:22.509917 2023] [wsgi:error] [pid 72794:tid 140400936187648] [remote 10.10.10.1:63089] [2023-05-25 07:50:53.249377]~ The Hexdump file has been created!
+[Thu May 25 07:51:22.780194 2023] [wsgi:error] [pid 72794:tid 140400936187648] [remote 10.10.10.1:63089] [2023-05-25 07:50:53.249377]~ The Strings file has been created!
+[Thu May 25 07:51:22.780906 2023] [wsgi:error] [pid 72794:tid 140400936187648] [remote 10.10.10.1:63089] [2023-05-25 07:51:22.780521]~ The JSON file has been created!
+[Thu May 25 07:51:44.739458 2023] [wsgi:error] [pid 72794:tid 140400936187648] [remote 10.10.10.1:63089] [2023-05-25 07:50:56.072659]~ The behaviour repport has been created!
+[Thu May 25 07:52:03.584706 2023] [wsgi:error] [pid 72794:tid 140400936187648] [remote 10.10.10.1:63089] [2023-05-25 07:52:03,576] ERROR in app: Exception on /upload [POST]
+[Thu May 25 07:52:03.584905 2023] [wsgi:error] [pid 72794:tid 140400936187648] [remote 10.10.10.1:63089] Traceback (most recent call last):
+[Thu May 25 07:52:03.586718 2023] [wsgi:error] [pid 72794:tid 140400936187648] [remote 10.10.10.1:63089]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Thu May 25 07:52:03.586806 2023] [wsgi:error] [pid 72794:tid 140400936187648] [remote 10.10.10.1:63089]     response = self.full_dispatch_request()
+[Thu May 25 07:52:03.586836 2023] [wsgi:error] [pid 72794:tid 140400936187648] [remote 10.10.10.1:63089]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Thu May 25 07:52:03.586862 2023] [wsgi:error] [pid 72794:tid 140400936187648] [remote 10.10.10.1:63089]     rv = self.handle_user_exception(e)
+[Thu May 25 07:52:03.586887 2023] [wsgi:error] [pid 72794:tid 140400936187648] [remote 10.10.10.1:63089]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Thu May 25 07:52:03.586913 2023] [wsgi:error] [pid 72794:tid 140400936187648] [remote 10.10.10.1:63089]     rv = self.dispatch_request()
+[Thu May 25 07:52:03.586954 2023] [wsgi:error] [pid 72794:tid 140400936187648] [remote 10.10.10.1:63089]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Thu May 25 07:52:03.586978 2023] [wsgi:error] [pid 72794:tid 140400936187648] [remote 10.10.10.1:63089]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Thu May 25 07:52:03.587003 2023] [wsgi:error] [pid 72794:tid 140400936187648] [remote 10.10.10.1:63089]   File "/var/www/basic-flask-app/app.py", line 93, in upload
+[Thu May 25 07:52:03.587027 2023] [wsgi:error] [pid 72794:tid 140400936187648] [remote 10.10.10.1:63089]     data["Yara-Rules"] = Yara_analyse(get_executable_to_analyse())
+[Thu May 25 07:52:03.587050 2023] [wsgi:error] [pid 72794:tid 140400936187648] [remote 10.10.10.1:63089]   File "/var/www/basic-flask-app/scripts/yara.py", line 37, in Yara_analyse
+[Thu May 25 07:52:03.587074 2023] [wsgi:error] [pid 72794:tid 140400936187648] [remote 10.10.10.1:63089]     _results_after.append(analyse_with_yara(rule_path, file_path))
+[Thu May 25 07:52:03.587098 2023] [wsgi:error] [pid 72794:tid 140400936187648] [remote 10.10.10.1:63089]   File "/var/www/basic-flask-app/scripts/yara.py", line 11, in analyse_with_yara
+[Thu May 25 07:52:03.587122 2023] [wsgi:error] [pid 72794:tid 140400936187648] [remote 10.10.10.1:63089]     rules = yara.compile(rule_path)
+[Thu May 25 07:52:03.587150 2023] [wsgi:error] [pid 72794:tid 140400936187648] [remote 10.10.10.1:63089] yara.SyntaxError: /var/www/basic-flask-app/static/rules/RANSOM_NEFILIM.yar(68): invalid field name "number_of_signatures"
+[Thu May 25 07:52:03.587656 2023] [wsgi:error] [pid 72794:tid 140400936187648] [remote 10.10.10.1:63089] 
+[Thu May 25 07:54:04.992102 2023] [wsgi:error] [pid 72794:tid 140400759310080] [2023-05-25 07:50:55.839987]~ The prediction using machine learnig by Random-Forest has been done successful!
+[Thu May 25 07:55:57.256351 2023] [wsgi:error] [pid 72794:tid 140400314922752] [2023-05-25 07:55:57.256212]~ The prediction for new feature True
+[Thu May 25 08:01:41.432270 2023] [wsgi:error] [pid 78448:tid 140061481813760] [remote 10.10.10.1:63121] [2023-05-25 08:01:26.431396]~ The Hexdump file has been created!
+[Thu May 25 08:01:41.679025 2023] [wsgi:error] [pid 78448:tid 140061481813760] [remote 10.10.10.1:63121] [2023-05-25 08:01:26.431396]~ The Strings file has been created!
+[Thu May 25 08:01:41.679310 2023] [wsgi:error] [pid 78448:tid 140061481813760] [remote 10.10.10.1:63121] [2023-05-25 08:01:41.679176]~ The JSON file has been created!
+[Thu May 25 08:02:06.273016 2023] [wsgi:error] [pid 78448:tid 140061481813760] [remote 10.10.10.1:63121] [2023-05-25 08:01:30.804154]~ The behaviour repport has been created!
+[Thu May 25 08:02:26.954001 2023] [wsgi:error] [pid 78448:tid 140061481813760] [remote 10.10.10.1:63121] [2023-05-25 08:02:26,945] ERROR in app: Exception on /upload [POST]
+[Thu May 25 08:02:26.955174 2023] [wsgi:error] [pid 78448:tid 140061481813760] [remote 10.10.10.1:63121] Traceback (most recent call last):
+[Thu May 25 08:02:26.955420 2023] [wsgi:error] [pid 78448:tid 140061481813760] [remote 10.10.10.1:63121]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Thu May 25 08:02:26.955480 2023] [wsgi:error] [pid 78448:tid 140061481813760] [remote 10.10.10.1:63121]     response = self.full_dispatch_request()
+[Thu May 25 08:02:26.955648 2023] [wsgi:error] [pid 78448:tid 140061481813760] [remote 10.10.10.1:63121]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Thu May 25 08:02:26.956040 2023] [wsgi:error] [pid 78448:tid 140061481813760] [remote 10.10.10.1:63121]     rv = self.handle_user_exception(e)
+[Thu May 25 08:02:26.956104 2023] [wsgi:error] [pid 78448:tid 140061481813760] [remote 10.10.10.1:63121]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Thu May 25 08:02:26.956277 2023] [wsgi:error] [pid 78448:tid 140061481813760] [remote 10.10.10.1:63121]     rv = self.dispatch_request()
+[Thu May 25 08:02:26.956592 2023] [wsgi:error] [pid 78448:tid 140061481813760] [remote 10.10.10.1:63121]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Thu May 25 08:02:26.957016 2023] [wsgi:error] [pid 78448:tid 140061481813760] [remote 10.10.10.1:63121]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Thu May 25 08:02:26.957204 2023] [wsgi:error] [pid 78448:tid 140061481813760] [remote 10.10.10.1:63121]   File "/var/www/basic-flask-app/app.py", line 93, in upload
+[Thu May 25 08:02:26.957545 2023] [wsgi:error] [pid 78448:tid 140061481813760] [remote 10.10.10.1:63121]     data["Yara-Rules"] = Yara_analyse(get_executable_to_analyse())
+[Thu May 25 08:02:26.957900 2023] [wsgi:error] [pid 78448:tid 140061481813760] [remote 10.10.10.1:63121]   File "/var/www/basic-flask-app/scripts/yara.py", line 37, in Yara_analyse
+[Thu May 25 08:02:26.959337 2023] [wsgi:error] [pid 78448:tid 140061481813760] [remote 10.10.10.1:63121]     _results_after.append(analyse_with_yara(rule_path, file_path))
+[Thu May 25 08:02:26.959536 2023] [wsgi:error] [pid 78448:tid 140061481813760] [remote 10.10.10.1:63121]   File "/var/www/basic-flask-app/scripts/yara.py", line 11, in analyse_with_yara
+[Thu May 25 08:02:26.960117 2023] [wsgi:error] [pid 78448:tid 140061481813760] [remote 10.10.10.1:63121]     rules = yara.compile(rule_path)
+[Thu May 25 08:02:26.960435 2023] [wsgi:error] [pid 78448:tid 140061481813760] [remote 10.10.10.1:63121] yara.SyntaxError: /var/www/basic-flask-app/static/rules/RANSOM_NEFILIM.yar(68): invalid field name "number_of_signatures"
+[Thu May 25 08:02:26.960604 2023] [wsgi:error] [pid 78448:tid 140061481813760] [remote 10.10.10.1:63121] 
+[Thu May 25 08:03:20.982843 2023] [wsgi:error] [pid 79493:tid 140658783868672] [remote 10.10.10.1:63130] [2023-05-25 08:03:09.636317]~ The Hexdump file has been created!
+[Thu May 25 08:03:21.245919 2023] [wsgi:error] [pid 79493:tid 140658783868672] [remote 10.10.10.1:63130] [2023-05-25 08:03:09.636317]~ The Strings file has been created!
+[Thu May 25 08:03:21.246893 2023] [wsgi:error] [pid 79493:tid 140658783868672] [remote 10.10.10.1:63130] [2023-05-25 08:03:21.246353]~ The JSON file has been created!
+[Thu May 25 08:03:47.190092 2023] [wsgi:error] [pid 79493:tid 140658783868672] [remote 10.10.10.1:63130] [2023-05-25 08:03:12.156770]~ The behaviour repport has been created!
+[Thu May 25 08:04:06.915313 2023] [wsgi:error] [pid 79493:tid 140658783868672] [remote 10.10.10.1:63130] [2023-05-25 08:04:06,913] ERROR in app: Exception on /upload [POST]
+[Thu May 25 08:04:06.915382 2023] [wsgi:error] [pid 79493:tid 140658783868672] [remote 10.10.10.1:63130] Traceback (most recent call last):
+[Thu May 25 08:04:06.915391 2023] [wsgi:error] [pid 79493:tid 140658783868672] [remote 10.10.10.1:63130]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Thu May 25 08:04:06.915396 2023] [wsgi:error] [pid 79493:tid 140658783868672] [remote 10.10.10.1:63130]     response = self.full_dispatch_request()
+[Thu May 25 08:04:06.915399 2023] [wsgi:error] [pid 79493:tid 140658783868672] [remote 10.10.10.1:63130]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Thu May 25 08:04:06.915403 2023] [wsgi:error] [pid 79493:tid 140658783868672] [remote 10.10.10.1:63130]     rv = self.handle_user_exception(e)
+[Thu May 25 08:04:06.915406 2023] [wsgi:error] [pid 79493:tid 140658783868672] [remote 10.10.10.1:63130]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Thu May 25 08:04:06.915410 2023] [wsgi:error] [pid 79493:tid 140658783868672] [remote 10.10.10.1:63130]     rv = self.dispatch_request()
+[Thu May 25 08:04:06.915414 2023] [wsgi:error] [pid 79493:tid 140658783868672] [remote 10.10.10.1:63130]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Thu May 25 08:04:06.915417 2023] [wsgi:error] [pid 79493:tid 140658783868672] [remote 10.10.10.1:63130]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Thu May 25 08:04:06.915429 2023] [wsgi:error] [pid 79493:tid 140658783868672] [remote 10.10.10.1:63130]   File "/var/www/basic-flask-app/app.py", line 93, in upload
+[Thu May 25 08:04:06.915432 2023] [wsgi:error] [pid 79493:tid 140658783868672] [remote 10.10.10.1:63130]     data["Yara-Rules"] = Yara_analyse(get_executable_to_analyse())
+[Thu May 25 08:04:06.915436 2023] [wsgi:error] [pid 79493:tid 140658783868672] [remote 10.10.10.1:63130]   File "/var/www/basic-flask-app/scripts/yara.py", line 37, in Yara_analyse
+[Thu May 25 08:04:06.915439 2023] [wsgi:error] [pid 79493:tid 140658783868672] [remote 10.10.10.1:63130]     _results_after.append(analyse_with_yara(rule_path, file_path))
+[Thu May 25 08:04:06.915442 2023] [wsgi:error] [pid 79493:tid 140658783868672] [remote 10.10.10.1:63130]   File "/var/www/basic-flask-app/scripts/yara.py", line 11, in analyse_with_yara
+[Thu May 25 08:04:06.915445 2023] [wsgi:error] [pid 79493:tid 140658783868672] [remote 10.10.10.1:63130]     rules = yara.compile(rule_path)
+[Thu May 25 08:04:06.915451 2023] [wsgi:error] [pid 79493:tid 140658783868672] [remote 10.10.10.1:63130] yara.SyntaxError: /var/www/basic-flask-app/static/rules/Ransom_ThunderX.yar(44): invalid field name "imphash"
+[Thu May 25 08:04:06.915482 2023] [wsgi:error] [pid 79493:tid 140658783868672] [remote 10.10.10.1:63130] 
+[Thu May 25 08:05:16.233394 2023] [wsgi:error] [pid 80499:tid 140095314306816] [remote 10.10.10.1:63144] [2023-05-25 08:05:02.940678]~ The Hexdump file has been created!
+[Thu May 25 08:05:16.572522 2023] [wsgi:error] [pid 80499:tid 140095314306816] [remote 10.10.10.1:63144] [2023-05-25 08:05:02.940678]~ The Strings file has been created!
+[Thu May 25 08:05:16.573805 2023] [wsgi:error] [pid 80499:tid 140095314306816] [remote 10.10.10.1:63144] [2023-05-25 08:05:16.572675]~ The JSON file has been created!
+[Thu May 25 08:05:40.722618 2023] [wsgi:error] [pid 80499:tid 140095314306816] [remote 10.10.10.1:63144] [2023-05-25 08:05:05.442704]~ The behaviour repport has been created!
+[Thu May 25 08:06:00.696224 2023] [wsgi:error] [pid 80499:tid 140095314306816] [remote 10.10.10.1:63144] [2023-05-25 08:06:00,694] ERROR in app: Exception on /upload [POST]
+[Thu May 25 08:06:00.703542 2023] [wsgi:error] [pid 80499:tid 140095314306816] [remote 10.10.10.1:63144] Traceback (most recent call last):
+[Thu May 25 08:06:00.703748 2023] [wsgi:error] [pid 80499:tid 140095314306816] [remote 10.10.10.1:63144]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Thu May 25 08:06:00.703831 2023] [wsgi:error] [pid 80499:tid 140095314306816] [remote 10.10.10.1:63144]     response = self.full_dispatch_request()
+[Thu May 25 08:06:00.703896 2023] [wsgi:error] [pid 80499:tid 140095314306816] [remote 10.10.10.1:63144]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Thu May 25 08:06:00.703955 2023] [wsgi:error] [pid 80499:tid 140095314306816] [remote 10.10.10.1:63144]     rv = self.handle_user_exception(e)
+[Thu May 25 08:06:00.704011 2023] [wsgi:error] [pid 80499:tid 140095314306816] [remote 10.10.10.1:63144]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Thu May 25 08:06:00.704067 2023] [wsgi:error] [pid 80499:tid 140095314306816] [remote 10.10.10.1:63144]     rv = self.dispatch_request()
+[Thu May 25 08:06:00.704122 2023] [wsgi:error] [pid 80499:tid 140095314306816] [remote 10.10.10.1:63144]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Thu May 25 08:06:00.704181 2023] [wsgi:error] [pid 80499:tid 140095314306816] [remote 10.10.10.1:63144]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Thu May 25 08:06:00.704238 2023] [wsgi:error] [pid 80499:tid 140095314306816] [remote 10.10.10.1:63144]   File "/var/www/basic-flask-app/app.py", line 93, in upload
+[Thu May 25 08:06:00.704296 2023] [wsgi:error] [pid 80499:tid 140095314306816] [remote 10.10.10.1:63144]     data["Yara-Rules"] = Yara_analyse(get_executable_to_analyse())
+[Thu May 25 08:06:00.704381 2023] [wsgi:error] [pid 80499:tid 140095314306816] [remote 10.10.10.1:63144]   File "/var/www/basic-flask-app/scripts/yara.py", line 37, in Yara_analyse
+[Thu May 25 08:06:00.704437 2023] [wsgi:error] [pid 80499:tid 140095314306816] [remote 10.10.10.1:63144]     _results_after.append(analyse_with_yara(rule_path, file_path))
+[Thu May 25 08:06:00.704491 2023] [wsgi:error] [pid 80499:tid 140095314306816] [remote 10.10.10.1:63144]   File "/var/www/basic-flask-app/scripts/yara.py", line 11, in analyse_with_yara
+[Thu May 25 08:06:00.704668 2023] [wsgi:error] [pid 80499:tid 140095314306816] [remote 10.10.10.1:63144]     rules = yara.compile(rule_path)
+[Thu May 25 08:06:00.704758 2023] [wsgi:error] [pid 80499:tid 140095314306816] [remote 10.10.10.1:63144] yara.SyntaxError: /var/www/basic-flask-app/static/rules/REvil_Cert.yar(25): invalid field name "number_of_signatures"
+[Thu May 25 08:06:00.704939 2023] [wsgi:error] [pid 80499:tid 140095314306816] [remote 10.10.10.1:63144] 
+[Thu May 25 08:06:59.285036 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63156] [2023-05-25 08:06:45.475971]~ The Hexdump file has been created!
+[Thu May 25 08:06:59.527829 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63156] [2023-05-25 08:06:45.475971]~ The Strings file has been created!
+[Thu May 25 08:06:59.528282 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63156] [2023-05-25 08:06:59.528105]~ The JSON file has been created!
+[Thu May 25 08:07:23.872233 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63156] [2023-05-25 08:06:47.921096]~ The behaviour repport has been created!
+[Thu May 25 08:07:33.911666 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63156] [2023-05-25 08:07:33,902] ERROR in app: Exception on /upload [POST]
+[Thu May 25 08:07:33.911868 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63156] Traceback (most recent call last):
+[Thu May 25 08:07:33.911921 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63156]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Thu May 25 08:07:33.912039 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63156]     response = self.full_dispatch_request()
+[Thu May 25 08:07:33.912122 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63156]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Thu May 25 08:07:33.912181 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63156]     rv = self.handle_user_exception(e)
+[Thu May 25 08:07:33.912238 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63156]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Thu May 25 08:07:33.912293 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63156]     rv = self.dispatch_request()
+[Thu May 25 08:07:33.912346 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63156]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Thu May 25 08:07:33.912401 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63156]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Thu May 25 08:07:33.912456 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63156]   File "/var/www/basic-flask-app/app.py", line 93, in upload
+[Thu May 25 08:07:33.912512 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63156]     data["Yara-Rules"] = Yara_analyse(get_executable_to_analyse())
+[Thu May 25 08:07:33.912567 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63156]   File "/var/www/basic-flask-app/scripts/yara.py", line 37, in Yara_analyse
+[Thu May 25 08:07:33.912623 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63156]     _results_after.append(analyse_with_yara(rule_path, file_path))
+[Thu May 25 08:07:33.912703 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63156]   File "/var/www/basic-flask-app/scripts/yara.py", line 11, in analyse_with_yara
+[Thu May 25 08:07:33.912759 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63156]     rules = yara.compile(rule_path)
+[Thu May 25 08:07:33.912823 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63156] yara.SyntaxError: /var/www/basic-flask-app/static/rules/RANSOM_egregor.yar(28): invalid field name "sha256"
+[Thu May 25 08:07:33.913052 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63156] 
+[Thu May 25 08:09:18.114506 2023] [wsgi:error] [pid 81437:tid 140186390361856] [2023-05-25 08:06:47.708769]~ The prediction using machine learnig by Random-Forest has been done successful!
+[Thu May 25 08:10:11.964276 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63173] [2023-05-25 08:06:45.475971]~ The Hexdump file has been created!
+[Thu May 25 08:10:12.637834 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63173] [2023-05-25 08:06:45.475971]~ The Strings file has been created!
+[Thu May 25 08:10:12.638619 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63173] [2023-05-25 08:10:12.638095]~ The JSON file has been created!
+[Thu May 25 08:10:35.526525 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63173] [2023-05-25 08:06:47.921096]~ The behaviour repport has been created!
+[Thu May 25 08:10:47.754267 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63173] [2023-05-25 08:10:47,719] ERROR in app: Exception on /upload [POST]
+[Thu May 25 08:10:47.754988 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63173] Traceback (most recent call last):
+[Thu May 25 08:10:47.755092 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63173]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Thu May 25 08:10:47.755170 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63173]     response = self.full_dispatch_request()
+[Thu May 25 08:10:47.755184 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63173]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Thu May 25 08:10:47.755211 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63173]     rv = self.handle_user_exception(e)
+[Thu May 25 08:10:47.755219 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63173]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Thu May 25 08:10:47.755226 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63173]     rv = self.dispatch_request()
+[Thu May 25 08:10:47.755233 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63173]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Thu May 25 08:10:47.755240 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63173]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Thu May 25 08:10:47.755247 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63173]   File "/var/www/basic-flask-app/app.py", line 93, in upload
+[Thu May 25 08:10:47.755255 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63173]     data["Yara-Rules"] = Yara_analyse(get_executable_to_analyse())
+[Thu May 25 08:10:47.755262 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63173]   File "/var/www/basic-flask-app/scripts/yara.py", line 37, in Yara_analyse
+[Thu May 25 08:10:47.755269 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63173]     try:
+[Thu May 25 08:10:47.755276 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63173]   File "/var/www/basic-flask-app/scripts/yara.py", line 11, in analyse_with_yara
+[Thu May 25 08:10:47.755377 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63173]     rules = yara.compile(rule_path)
+[Thu May 25 08:10:47.755402 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63173] yara.SyntaxError: /var/www/basic-flask-app/static/rules/RANSOM_SamSam.yar(101): invalid field name "imphash"
+[Thu May 25 08:10:47.755492 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63173] 
+[Thu May 25 08:12:01.691662 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63260] [2023-05-25 08:06:45.475971]~ The Hexdump file has been created!
+[Thu May 25 08:12:02.607965 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63260] [2023-05-25 08:06:45.475971]~ The Strings file has been created!
+[Thu May 25 08:12:02.608525 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63260] [2023-05-25 08:12:02.608201]~ The JSON file has been created!
+[Thu May 25 08:12:24.527135 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63260] [2023-05-25 08:06:47.921096]~ The behaviour repport has been created!
+[Thu May 25 08:12:37.780915 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63260] [2023-05-25 08:12:37,775] ERROR in app: Exception on /upload [POST]
+[Thu May 25 08:12:37.793310 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63260] Traceback (most recent call last):
+[Thu May 25 08:12:37.802914 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63260]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Thu May 25 08:12:37.803379 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63260]     response = self.full_dispatch_request()
+[Thu May 25 08:12:37.808878 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63260]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Thu May 25 08:12:37.810575 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63260]     rv = self.handle_user_exception(e)
+[Thu May 25 08:12:37.814192 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63260]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Thu May 25 08:12:37.814343 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63260]     rv = self.dispatch_request()
+[Thu May 25 08:12:37.814387 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63260]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Thu May 25 08:12:37.814425 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63260]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Thu May 25 08:12:37.814462 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63260]   File "/var/www/basic-flask-app/app.py", line 93, in upload
+[Thu May 25 08:12:37.814498 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63260]     data["Yara-Rules"] = Yara_analyse(get_executable_to_analyse())
+[Thu May 25 08:12:37.814534 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63260]   File "/var/www/basic-flask-app/scripts/yara.py", line 37, in Yara_analyse
+[Thu May 25 08:12:37.814570 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63260]     try:
+[Thu May 25 08:12:37.814605 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63260]   File "/var/www/basic-flask-app/scripts/yara.py", line 11, in analyse_with_yara
+[Thu May 25 08:12:37.814640 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63260]     rules = yara.compile(rule_path)
+[Thu May 25 08:12:37.814682 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63260] yara.SyntaxError: /var/www/basic-flask-app/static/rules/RANSOM_SamSam.yar(101): invalid field name "imphash"
+[Thu May 25 08:12:37.814842 2023] [wsgi:error] [pid 81437:tid 140186635872000] [remote 10.10.10.1:63260] 
+[Thu May 25 08:13:37.387518 2023] [wsgi:error] [pid 81437:tid 140186390361856] [2023-05-25 08:06:47.708769]~ The prediction using machine learnig by Random-Forest has been done successful!
+[Thu May 25 08:14:21.231627 2023] [wsgi:error] [pid 81437:tid 140186014754560] [2023-05-25 08:14:21.225926]~ The prediction for new feature True
+[Thu May 25 08:15:34.896070 2023] [wsgi:error] [pid 86147:tid 139896895895296] [remote 10.10.10.1:63271] [2023-05-25 08:15:21.549161]~ The Hexdump file has been created!
+[Thu May 25 08:15:35.167565 2023] [wsgi:error] [pid 86147:tid 139896895895296] [remote 10.10.10.1:63271] [2023-05-25 08:15:21.549161]~ The Strings file has been created!
+[Thu May 25 08:15:35.169119 2023] [wsgi:error] [pid 86147:tid 139896895895296] [remote 10.10.10.1:63271] [2023-05-25 08:15:35.167819]~ The JSON file has been created!
+[Thu May 25 08:15:57.292041 2023] [wsgi:error] [pid 86147:tid 139896895895296] [remote 10.10.10.1:63271] [2023-05-25 08:15:25.832246]~ The behaviour repport has been created!
+[Thu May 25 08:16:17.460798 2023] [wsgi:error] [pid 86147:tid 139896895895296] [remote 10.10.10.1:63271] [2023-05-25 08:15:26.098062]~ The Signature Analysis by YARA-Rule has been done successful!
+[Thu May 25 08:16:17.535650 2023] [wsgi:error] [pid 86147:tid 139896895895296] [remote 10.10.10.1:63271] [2023-05-25 08:15:22.730491]~ The Signature Analysis has been done successful!
+[Thu May 25 08:16:17.566883 2023] [wsgi:error] [pid 86147:tid 139896895895296] [remote 10.10.10.1:63271] [2023-05-25 08:16:17,536] ERROR in app: Exception on /upload [POST]
+[Thu May 25 08:16:17.567639 2023] [wsgi:error] [pid 86147:tid 139896895895296] [remote 10.10.10.1:63271] Traceback (most recent call last):
+[Thu May 25 08:16:17.571964 2023] [wsgi:error] [pid 86147:tid 139896895895296] [remote 10.10.10.1:63271]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Thu May 25 08:16:17.625723 2023] [wsgi:error] [pid 86147:tid 139896895895296] [remote 10.10.10.1:63271]     response = self.full_dispatch_request()
+[Thu May 25 08:16:17.650064 2023] [wsgi:error] [pid 86147:tid 139896895895296] [remote 10.10.10.1:63271]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Thu May 25 08:16:17.650366 2023] [wsgi:error] [pid 86147:tid 139896895895296] [remote 10.10.10.1:63271]     rv = self.handle_user_exception(e)
+[Thu May 25 08:16:17.658195 2023] [wsgi:error] [pid 86147:tid 139896895895296] [remote 10.10.10.1:63271]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Thu May 25 08:16:17.658482 2023] [wsgi:error] [pid 86147:tid 139896895895296] [remote 10.10.10.1:63271]     rv = self.dispatch_request()
+[Thu May 25 08:16:17.658622 2023] [wsgi:error] [pid 86147:tid 139896895895296] [remote 10.10.10.1:63271]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Thu May 25 08:16:17.661512 2023] [wsgi:error] [pid 86147:tid 139896895895296] [remote 10.10.10.1:63271]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Thu May 25 08:16:17.661751 2023] [wsgi:error] [pid 86147:tid 139896895895296] [remote 10.10.10.1:63271]   File "/var/www/basic-flask-app/app.py", line 97, in upload
+[Thu May 25 08:16:17.661879 2023] [wsgi:error] [pid 86147:tid 139896895895296] [remote 10.10.10.1:63271]     data["Signature"] = start_signature_analysis()
+[Thu May 25 08:16:17.664120 2023] [wsgi:error] [pid 86147:tid 139896895895296] [remote 10.10.10.1:63271]   File "/var/www/basic-flask-app/scripts/signature_analysis.py", line 47, in start_signature_analysis
+[Thu May 25 08:16:17.668475 2023] [wsgi:error] [pid 86147:tid 139896895895296] [remote 10.10.10.1:63271]     if not Ransomware_Detection_Based_File_Family(i,dic[i]['md5Hash']):
+[Thu May 25 08:16:17.669381 2023] [wsgi:error] [pid 86147:tid 139896895895296] [remote 10.10.10.1:63271] KeyError: 'md5Hash'
+[Thu May 25 08:16:17.683269 2023] [wsgi:error] [pid 86147:tid 139896895895296] [remote 10.10.10.1:63271] 
+[Thu May 25 08:20:11.542105 2023] [wsgi:error] [pid 87395:tid 139689387972352] [remote 10.10.10.1:63300] [2023-05-25 08:19:58.765165]~ The Hexdump file has been created!
+[Thu May 25 08:20:11.798527 2023] [wsgi:error] [pid 87395:tid 139689387972352] [remote 10.10.10.1:63300] [2023-05-25 08:19:58.765165]~ The Strings file has been created!
+[Thu May 25 08:20:11.799869 2023] [wsgi:error] [pid 87395:tid 139689387972352] [remote 10.10.10.1:63300] [2023-05-25 08:20:11.798881]~ The JSON file has been created!
+[Thu May 25 08:20:35.356297 2023] [wsgi:error] [pid 87395:tid 139689387972352] [remote 10.10.10.1:63300] [2023-05-25 08:20:01.449365]~ The behaviour repport has been created!
+[Thu May 25 08:20:52.754644 2023] [wsgi:error] [pid 87395:tid 139689387972352] [remote 10.10.10.1:63300] [2023-05-25 08:20:01.546265]~ The Signature Analysis by YARA-Rule has been done successful!
+[Thu May 25 08:20:52.859439 2023] [wsgi:error] [pid 87395:tid 139689387972352] [remote 10.10.10.1:63300] [2023-05-25 08:19:59.415967]~ The Signature Analysis has been done successful!
+[Thu May 25 08:20:52.864397 2023] [wsgi:error] [pid 87395:tid 139689387972352] [remote 10.10.10.1:63300] [2023-05-25 08:20:52,860] ERROR in app: Exception on /upload [POST]
+[Thu May 25 08:20:52.864638 2023] [wsgi:error] [pid 87395:tid 139689387972352] [remote 10.10.10.1:63300] Traceback (most recent call last):
+[Thu May 25 08:20:52.865538 2023] [wsgi:error] [pid 87395:tid 139689387972352] [remote 10.10.10.1:63300]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Thu May 25 08:20:52.865717 2023] [wsgi:error] [pid 87395:tid 139689387972352] [remote 10.10.10.1:63300]     response = self.full_dispatch_request()
+[Thu May 25 08:20:52.865778 2023] [wsgi:error] [pid 87395:tid 139689387972352] [remote 10.10.10.1:63300]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Thu May 25 08:20:52.865828 2023] [wsgi:error] [pid 87395:tid 139689387972352] [remote 10.10.10.1:63300]     rv = self.handle_user_exception(e)
+[Thu May 25 08:20:52.865878 2023] [wsgi:error] [pid 87395:tid 139689387972352] [remote 10.10.10.1:63300]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Thu May 25 08:20:52.865927 2023] [wsgi:error] [pid 87395:tid 139689387972352] [remote 10.10.10.1:63300]     rv = self.dispatch_request()
+[Thu May 25 08:20:52.865975 2023] [wsgi:error] [pid 87395:tid 139689387972352] [remote 10.10.10.1:63300]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Thu May 25 08:20:52.866030 2023] [wsgi:error] [pid 87395:tid 139689387972352] [remote 10.10.10.1:63300]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Thu May 25 08:20:52.866083 2023] [wsgi:error] [pid 87395:tid 139689387972352] [remote 10.10.10.1:63300]   File "/var/www/basic-flask-app/app.py", line 97, in upload
+[Thu May 25 08:20:52.866147 2023] [wsgi:error] [pid 87395:tid 139689387972352] [remote 10.10.10.1:63300]     data["Signature"] = start_signature_analysis()
+[Thu May 25 08:20:52.866209 2023] [wsgi:error] [pid 87395:tid 139689387972352] [remote 10.10.10.1:63300]   File "/var/www/basic-flask-app/scripts/signature_analysis.py", line 47, in start_signature_analysis
+[Thu May 25 08:20:52.866260 2023] [wsgi:error] [pid 87395:tid 139689387972352] [remote 10.10.10.1:63300]     if not Ransomware_Detection_Based_File_Family(i,dic[i]['md5Hash']):
+[Thu May 25 08:20:52.866316 2023] [wsgi:error] [pid 87395:tid 139689387972352] [remote 10.10.10.1:63300] KeyError: 'md5Hash'
+[Thu May 25 08:20:52.866553 2023] [wsgi:error] [pid 87395:tid 139689387972352] [remote 10.10.10.1:63300] 
+[Thu May 25 08:22:55.654627 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345] [2023-05-25 08:22:48.633051]~ The Hexdump file has been created!
+[Thu May 25 08:22:55.972195 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345] [2023-05-25 08:22:48.633051]~ The Strings file has been created!
+[Thu May 25 08:22:55.972821 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345] [2023-05-25 08:22:55.972459]~ The JSON file has been created!
+[Thu May 25 08:23:17.652356 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345] [2023-05-25 08:22:51.363996]~ The behaviour repport has been created!
+[Thu May 25 08:23:32.011986 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345] [2023-05-25 08:22:51.460664]~ The Signature Analysis by YARA-Rule has been done successful!
+[Thu May 25 08:23:32.012521 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345] [2023-05-25 08:22:49.356017]~ The Signature Analysis has been done successful!
+[Thu May 25 08:23:32.103304 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345] [2023-05-25 08:22:51.186178]~ The Obsufuction of the file has been done successful!
+[Thu May 25 08:23:33.189005 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345] [2023-05-25 08:22:51.363996]~ The behaviour of the file has been done successful!
+[Thu May 25 08:23:33.190309 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345] [2023-05-25 08:22:51.269628]~ The Solution Existante file has been created!
+[Thu May 25 08:23:34.242586 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345] [2023-05-25 08:23:34,223] ERROR in app: Exception on /upload [POST]
+[Thu May 25 08:23:34.242631 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345] Traceback (most recent call last):
+[Thu May 25 08:23:34.242639 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Thu May 25 08:23:34.242643 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345]     response = self.full_dispatch_request()
+[Thu May 25 08:23:34.242647 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Thu May 25 08:23:34.242650 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345]     rv = self.handle_user_exception(e)
+[Thu May 25 08:23:34.242654 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Thu May 25 08:23:34.242658 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345]     rv = self.dispatch_request()
+[Thu May 25 08:23:34.242661 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Thu May 25 08:23:34.242664 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Thu May 25 08:23:34.242668 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345]   File "/var/www/basic-flask-app/app.py", line 114, in upload
+[Thu May 25 08:23:34.242671 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345]     data["Intezer API"], data["Scanii API"], ss = solution_deja_existante(filename)
+[Thu May 25 08:23:34.242675 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345]   File "/var/www/basic-flask-app/scripts/solution_existante.py", line 122, in solution_deja_existante
+[Thu May 25 08:23:34.242680 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345]     return analyze_by_intezer(dictionary[exe_file]["md5Hash"]), Analyse_by_Scanii('a4de59bbbfa675c1634ebb6d1efece6b:d162028f2',exe_file), open_json_file_and_print(dictionary[exe_file]["md5Hash"])
+[Thu May 25 08:23:34.242684 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345]   File "/var/www/basic-flask-app/scripts/solution_existante.py", line 89, in Analyse_by_Scanii
+[Thu May 25 08:23:34.242697 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345]     output = subprocess.check_output(command)
+[Thu May 25 08:23:34.242701 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345]   File "/usr/lib/python3.6/subprocess.py", line 356, in check_output
+[Thu May 25 08:23:34.242704 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345]     **kwargs).stdout
+[Thu May 25 08:23:34.242707 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345]   File "/usr/lib/python3.6/subprocess.py", line 423, in run
+[Thu May 25 08:23:34.242710 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345]     with Popen(*popenargs, **kwargs) as process:
+[Thu May 25 08:23:34.242713 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345]   File "/usr/lib/python3.6/subprocess.py", line 729, in __init__
+[Thu May 25 08:23:34.242716 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345]     restore_signals, start_new_session)
+[Thu May 25 08:23:34.242719 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345]   File "/usr/lib/python3.6/subprocess.py", line 1364, in _execute_child
+[Thu May 25 08:23:34.242723 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345]     raise child_exception_type(errno_num, err_msg, err_filename)
+[Thu May 25 08:23:34.242728 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345] FileNotFoundError: [Errno 2] No such file or directory: 'curl': 'curl'
+[Thu May 25 08:23:34.242772 2023] [wsgi:error] [pid 89974:tid 139932146939648] [remote 10.10.10.1:63345] 
+[Thu May 25 08:24:51.415169 2023] [wsgi:error] [pid 89974:tid 139931880781568] [2023-05-25 08:22:51.143166]~ The prediction using machine learnig by Random-Forest has been done successful!
+[Thu May 25 08:25:26.462512 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384] [2023-05-25 08:25:16.691191]~ The Hexdump file has been created!
+[Thu May 25 08:25:26.662206 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384] [2023-05-25 08:25:16.691191]~ The Strings file has been created!
+[Thu May 25 08:25:26.662532 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384] [2023-05-25 08:25:26.662349]~ The JSON file has been created!
+[Thu May 25 08:25:51.073987 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384] [2023-05-25 08:25:18.317414]~ The behaviour repport has been created!
+[Thu May 25 08:26:08.427955 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384] [2023-05-25 08:25:18.369404]~ The Signature Analysis by YARA-Rule has been done successful!
+[Thu May 25 08:26:08.495442 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384] [2023-05-25 08:25:17.093908]~ The Signature Analysis has been done successful!
+[Thu May 25 08:26:08.780536 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384] [2023-05-25 08:25:18.202229]~ The Obsufuction of the file has been done successful!
+[Thu May 25 08:26:10.254097 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384] [2023-05-25 08:25:18.317414]~ The behaviour of the file has been done successful!
+[Thu May 25 08:26:10.255447 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384] [2023-05-25 08:25:18.262581]~ The Solution Existante file has been created!
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 17 1335k    0     0   17  240k      0   245k  0:00:05 --:--:--  0:00:05  244k 26 1335k    0     0   26  352k      0   164k  0:00:08  0:00:02  0:00:06  164k 34 1335k    0     0   34  464k      0   154k  0:00:08  0:00:03  0:00:05  154k 39 1335k    0     0   39  528k      0   113k  0:00:11  0:00:04  0:00:07  113k 39 1335k    0     0   39  528k      0  95728  0:00:14  0:00:05  0:00:09 95728 39 1335k    0     0   39  528k      0  81291  0:00:16  0:00:06  0:00:10 51994 39 1335k    0     0   39  528k      0  70648  0:00:19  0:00:07  0:00:12 32690 39 1335k    0     0   39  528k      0  62462  0:00:21  0:00:08  0:00:13 11589 39 1335k    0     0   39  528k      0  55970  0:00:24  0:00:09  0:00:15     0 39 1335k    0     0   39  528k      0  50714  0:00:26  0:00:10  0:00:16     0 39 1335k    0     0   39  528k      0  46353  0:00:29  0:00:11  0:00:18     0 39 1335k    0     0   39  528k      0  45025  0:00:30  0:00:12  0:00:18     0 44 1335k    0     0   44  592k      0  44781  0:00:30  0:00:13  0:00:17 13424 44 1335k    0     0   44  592k      0  41678  0:00:32  0:00:14  0:00:18 13413 44 1335k    0     0   44  592k      0  39017  0:00:35  0:00:15  0:00:20 13440 45 1335k    0     0   45  608k      0  37639  0:00:36  0:00:16  0:00:20 16797 45 1335k    0     0   45  608k      0  35483  0:00:38  0:00:17  0:00:21 14792 45 1335k    0     0   45  608k      0  33564  0:00:40  0:00:18  0:00:22  3269 45 1335k    0     0   45  608k      0  31841  0:00:42  0:00:19  0:00:23  3272 45 1335k    0     0   45  608k      0  30343  0:00:45  0:00:20  0:00:25  3288 45 1335k    0     0   45  608k      0  28930  0:00:47  0:00:21  0:00:26     0 46 1335k    0     0   46  624k      0  28368  0:00:48  0:00:22  0:00:26  3290 46 1335k    0     0   46  624k      0  27156  0:00:50  0:00:23  0:00:27  3289 46 1335k    0     0   46  624k      0  25922  0:00:52  0:00:24  0:00:28  3215 47 1335k    0     0   47  640k      0  25868  0:00:52  0:00:25  0:00:27  6803 49 1335k    0     0   49  656k      0  25907  0:00:52  0:00:25  0:00:27 11148 51 1335k    0     0   51  688k      0  26137  0:00:52  0:00:26  0:00:26 14793 56 1335k    0     0   56  752k      0  27479  0:00:49  0:00:28  0:00:21 29165 59 1335k    0     0   59  800k      0  28170  0:00:48  0:00:29  0:00:19 40673 64 1335k    0     0   64  864k      0  29325  0:00:46  0:00:30  0:00:16 47421 69 1335k    0     0   69  928k      0  30669  0:00:44  0:00:30  0:00:14 55110 75 1335k    0     0   75 1008k      0  32269  0:00:42  0:00:31  0:00:11 65119 82 1335k    0     0   82 1104k      0  34305  0:00:39  0:00:32  0:00:07 73098 89 1335k    0     0   89 1200k      0  36193  0:00:37  0:00:33  0:00:04 84072 97 1335k    0     0   97 1296k      0  37943  0:00:36  0:00:34  0:00:02 92044 99 1335k    0     0   99 1328k      0  37454  0:00:36  0:00:36 --:--:-- 76949100 1335k    0     0  100 1335k      0  36985  0:00:36  0:00:36 --:--:-- 67188100 1335k    0     0  100 1335k      0  35692  0:00:38  0:00:38 --:--:-- 44206100 1335k    0     0  100 1335k      0  35120  0:00:38  0:00:38 --:--:-- 27827100 1335k    0     0  100 1335k      0  34238  0:00:39  0:00:39 --:--:--  8181100 1336k  100   277  100 1335k      6  34124  0:00:46  0:00:40  0:00:06  2172
+[Thu May 25 08:27:35.663024 2023] [wsgi:error] [pid 92118:tid 140418285827840] [2023-05-25 08:25:18.176323]~ The prediction using machine learnig by Random-Forest has been done successful!
+[Thu May 25 08:28:24.087314 2023] [wsgi:error] [pid 92118:tid 140417911416576] [2023-05-25 08:28:24.087245]~ The prediction for new feature True
+[Thu May 25 08:28:24.311745 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384] [2023-05-25 08:28:24,304] ERROR in app: Exception on /upload [POST]
+[Thu May 25 08:28:24.311812 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384] Traceback (most recent call last):
+[Thu May 25 08:28:24.311822 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Thu May 25 08:28:24.311826 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]     response = self.full_dispatch_request()
+[Thu May 25 08:28:24.311829 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Thu May 25 08:28:24.311843 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]     rv = self.handle_user_exception(e)
+[Thu May 25 08:28:24.311847 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Thu May 25 08:28:24.311850 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]     rv = self.dispatch_request()
+[Thu May 25 08:28:24.311853 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Thu May 25 08:28:24.311856 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Thu May 25 08:28:24.311859 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]   File "/var/www/basic-flask-app/app.py", line 127, in upload
+[Thu May 25 08:28:24.311862 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]     path_to_pdf = generate_report(data,s,familly,filename)
+[Thu May 25 08:28:24.311865 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]   File "/var/www/basic-flask-app/scripts/pdf.py", line 196, in generate_report
+[Thu May 25 08:28:24.311869 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]     pdf_file.drawImage('malware_scores.png', 100, 320, 400, 250)
+[Thu May 25 08:28:24.311872 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]   File "/usr/lib/python3/dist-packages/reportlab/pdfgen/canvas.py", line 946, in drawImage
+[Thu May 25 08:28:24.311875 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]     imgObj = pdfdoc.PDFImageXObject(name, image, mask=mask)
+[Thu May 25 08:28:24.311878 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]   File "/usr/lib/python3/dist-packages/reportlab/pdfbase/pdfdoc.py", line 2100, in __init__
+[Thu May 25 08:28:24.311881 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]     self.loadImageFromA85(src)
+[Thu May 25 08:28:24.311884 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]   File "/usr/lib/python3/dist-packages/reportlab/pdfbase/pdfdoc.py", line 2108, in loadImageFromA85
+[Thu May 25 08:28:24.311887 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]     imagedata = pdfutils.makeA85Image(source,IMG=IMG,detectJpeg=True)
+[Thu May 25 08:28:24.311890 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]   File "/usr/lib/python3/dist-packages/reportlab/pdfbase/pdfutils.py", line 38, in makeA85Image
+[Thu May 25 08:28:24.311893 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]     raw = img.getRGBData()
+[Thu May 25 08:28:24.311896 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]   File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 886, in getRGBData
+[Thu May 25 08:28:24.311899 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]     annotateException('\\nidentity=%s'%self.identity())
+[Thu May 25 08:28:24.311902 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]   File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 1390, in annotateException
+[Thu May 25 08:28:24.311906 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]     rl_reraise(t,v,b)
+[Thu May 25 08:28:24.311909 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]   File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 144, in rl_reraise
+[Thu May 25 08:28:24.311912 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]     raise v
+[Thu May 25 08:28:24.311915 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]   File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 871, in getRGBData
+[Thu May 25 08:28:24.311921 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384]     if Image.VERSION.startswith('1.1.7'): im.load()
+[Thu May 25 08:28:24.311924 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384] AttributeError: module 'PIL.Image' has no attribute 'VERSION'
+[Thu May 25 08:28:24.311930 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384] identity=[ImageReader@0x7fb574327160 filename='malware_scores.png']
+[Thu May 25 08:28:24.311970 2023] [wsgi:error] [pid 92118:tid 140418566035200] [remote 10.10.10.1:63384] 
+[Thu May 25 08:37:33.920326 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053] [2023-05-25 08:37:17.273899]~ The Hexdump file has been created!
+[Thu May 25 08:37:34.134283 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053] [2023-05-25 08:37:17.273899]~ The Strings file has been created!
+[Thu May 25 08:37:34.134593 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053] [2023-05-25 08:37:34.134435]~ The JSON file has been created!
+[Thu May 25 08:38:10.793668 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053] [2023-05-25 08:37:19.757721]~ The behaviour repport has been created!
+[Thu May 25 08:38:22.387064 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053] [2023-05-25 08:37:19.914835]~ The Signature Analysis by YARA-Rule has been done successful!
+[Thu May 25 08:38:22.388354 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053] [2023-05-25 08:37:18.061378]~ The Signature Analysis has been done successful!
+[Thu May 25 08:38:22.459550 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053] [2023-05-25 08:37:19.587631]~ The Obsufuction of the file has been done successful!
+[Thu May 25 08:38:23.684332 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053] [2023-05-25 08:37:19.757721]~ The behaviour of the file has been done successful!
+[Thu May 25 08:38:23.686015 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053] [2023-05-25 08:37:19.655181]~ The Solution Existante file has been created!
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 22 1335k    0     0   22  304k      0   211k  0:00:06  0:00:01  0:00:05  211k 22 1335k    0     0   22  304k      0   124k  0:00:10  0:00:02  0:00:08  124k 22 1335k    0     0   22  304k      0  90256  0:00:15  0:00:03  0:00:12 90230 22 1335k    0     0   22  304k      0  69875  0:00:19  0:00:04  0:00:15 69875 22 1335k    0     0   22  304k      0  57013  0:00:23  0:00:05  0:00:18 62383 27 1335k    0     0   27  368k      0  54907  0:00:24  0:00:06  0:00:18 12084 28 1335k    0     0   28  384k      0  49976  0:00:27  0:00:07  0:00:20 15103 28 1335k    0     0   28  384k      0  44326  0:00:30  0:00:08  0:00:22 15111 29 1335k    0     0   29  400k      0  41482  0:00:32  0:00:09  0:00:23 18140 31 1335k    0     0   31  416k      0  39994  0:00:34  0:00:10  0:00:24 22097 35 1335k    0     0   35  480k      0  41892  0:00:32  0:00:11  0:00:21 23549 39 1335k    0     0   39  528k      0  43413  0:00:31  0:00:12  0:00:19 32153 45 1335k    0     0   45  608k      0  45954  0:00:29  0:00:13  0:00:16 49032 51 1335k    0     0   51  688k      0  48566  0:00:28  0:00:14  0:00:14 63668 53 1335k    0     0   53  720k      0  47023  0:00:29  0:00:15  0:00:14 61912 53 1335k    0     0   53  720k      0  44893  0:00:30  0:00:16  0:00:14 52400 59 1335k    0     0   59  800k      0  45932  0:00:29  0:00:17  0:00:12 51771 62 1335k    0     0   62  832k      0  46077  0:00:29  0:00:18  0:00:11 46413 67 1335k    0     0   67  896k      0  46959  0:00:29  0:00:19  0:00:10 42335 70 1335k    0     0   70  944k      0  47264  0:00:28  0:00:20  0:00:08 48046 76 1335k    0     0   76 1024k      0  48495  0:00:28  0:00:21  0:00:07 59876 81 1335k    0     0   81 1088k      0  48909  0:00:27  0:00:22  0:00:05 59638 87 1335k    0     0   87 1168k      0  50881  0:00:26  0:00:23  0:00:03 68593 92 1335k    0     0   92 1232k      0  51285  0:00:26  0:00:24  0:00:02 67983 99 1335k    0     0   99 1328k      0  53326  0:00:25  0:00:25 --:--:-- 77879100 1335k    0     0  100 1335k      0  51706  0:00:26  0:00:26 --:--:-- 66064100 1335k    0     0  100 1335k      0  49595  0:00:27  0:00:27 --:--:-- 52840100 1335k    0     0  100 1335k      0  46767  0:00:29  0:00:29 --:--:-- 29919100 1336k  100   277  100 1335k      9  46577  0:00:30  0:00:29  0:00:01 22342
+[Thu May 25 08:39:38.906079 2023] [wsgi:error] [pid 98160:tid 140254908512000] [2023-05-25 08:37:19.543081]~ The prediction using machine learnig by Random-Forest has been done successful!
+[Thu May 25 08:40:26.043118 2023] [wsgi:error] [pid 98160:tid 140254531856128] [2023-05-25 08:40:26.043019]~ The prediction for new feature True
+[Thu May 25 08:40:26.299718 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053] [2023-05-25 08:40:26,295] ERROR in app: Exception on /upload [POST]
+[Thu May 25 08:40:26.299816 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053] Traceback (most recent call last):
+[Thu May 25 08:40:26.299839 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Thu May 25 08:40:26.299857 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]     response = self.full_dispatch_request()
+[Thu May 25 08:40:26.299875 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Thu May 25 08:40:26.299893 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]     rv = self.handle_user_exception(e)
+[Thu May 25 08:40:26.299910 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Thu May 25 08:40:26.299928 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]     rv = self.dispatch_request()
+[Thu May 25 08:40:26.299945 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]   File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Thu May 25 08:40:26.299963 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Thu May 25 08:40:26.300059 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]   File "/var/www/basic-flask-app/app.py", line 127, in upload
+[Thu May 25 08:40:26.300121 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]     path_to_pdf = generate_report(data,s,familly,filename)
+[Thu May 25 08:40:26.300318 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]   File "/var/www/basic-flask-app/scripts/pdf.py", line 196, in generate_report
+[Thu May 25 08:40:26.300367 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]     pdf_file.drawImage('/var/www/basic-flask-app/static/uploads/malware_scores.png', 100, 320, 400, 250)
+[Thu May 25 08:40:26.300391 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]   File "/usr/lib/python3/dist-packages/reportlab/pdfgen/canvas.py", line 946, in drawImage
+[Thu May 25 08:40:26.300409 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]     imgObj = pdfdoc.PDFImageXObject(name, image, mask=mask)
+[Thu May 25 08:40:26.300427 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]   File "/usr/lib/python3/dist-packages/reportlab/pdfbase/pdfdoc.py", line 2100, in __init__
+[Thu May 25 08:40:26.300461 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]     self.loadImageFromA85(src)
+[Thu May 25 08:40:26.300479 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]   File "/usr/lib/python3/dist-packages/reportlab/pdfbase/pdfdoc.py", line 2108, in loadImageFromA85
+[Thu May 25 08:40:26.300496 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]     imagedata = pdfutils.makeA85Image(source,IMG=IMG,detectJpeg=True)
+[Thu May 25 08:40:26.300517 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]   File "/usr/lib/python3/dist-packages/reportlab/pdfbase/pdfutils.py", line 38, in makeA85Image
+[Thu May 25 08:40:26.300550 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]     raw = img.getRGBData()
+[Thu May 25 08:40:26.300583 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]   File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 886, in getRGBData
+[Thu May 25 08:40:26.300619 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]     annotateException('\\nidentity=%s'%self.identity())
+[Thu May 25 08:40:26.300646 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]   File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 1390, in annotateException
+[Thu May 25 08:40:26.300677 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]     rl_reraise(t,v,b)
+[Thu May 25 08:40:26.300707 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]   File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 144, in rl_reraise
+[Thu May 25 08:40:26.300740 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]     raise v
+[Thu May 25 08:40:26.300768 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]   File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 871, in getRGBData
+[Thu May 25 08:40:26.300787 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053]     if Image.VERSION.startswith('1.1.7'): im.load()
+[Thu May 25 08:40:26.300805 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053] AttributeError: module 'PIL.Image' has no attribute 'VERSION'
+[Thu May 25 08:40:26.300830 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053] identity=[ImageReader@0x7f8fab620e10 filename='/var/www/basic-flask-app/static/uploads/malware_scores.png']
+[Thu May 25 08:40:26.300926 2023] [wsgi:error] [pid 98160:tid 140255186548480] [remote 10.10.10.1:64053] 
