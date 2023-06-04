@@ -15,7 +15,7 @@ warnings.filterwarnings(action="ignore")
 """### Get Initial File"""
 def get_all_files():
     all_files = []
-    os.chdir('/var/www/basic-flask-app/static/uploads')
+    os.chdir('/home/narimene/APP_PFE/static/uploads')
     current_dir = os.getcwd()
     for root, dirs, files in os.walk(current_dir):
         for file in files:
@@ -88,7 +88,7 @@ def process_new_feature(args):
 
 def dynamic_analysis():
     # Read the CSV file
-    df = pd.read_csv("/var/www/basic-flask-app/static/datasets_ml/RansomwareData.csv") # Change me if u change the OS
+    df = pd.read_csv("/home/narimene/APP_PFE/static/datasets_ml/RansomwareData.csv") # Change me if u change the OS
 
     # Delete useless columns using the preprocessing function
     df = preprocessing(df)

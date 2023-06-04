@@ -8,7 +8,7 @@ def read_file(filename):
     return lines
 
 def get_apis_results(file_path):
-    with open("/var/www/basic-flask-app/static/static data/apis.txt", 'r') as f:
+    with open("/home/narimene/APP_PFE/static/static data/apis.txt", 'r') as f:
         list_of_apis_functions = [line.strip() for line in f]
     
     pe = pefile.PE(file_path)
@@ -34,7 +34,7 @@ def get_apis_results(file_path):
     return results
 
 def get_drop_extensions_files(file_path):
-    extensions = read_file("/var/www/basic-flask-app/static/static data/dropped_ext.txt")
+    extensions = read_file("/home/narimene/APP_PFE/static/static data/dropped_ext.txt")
     # Read the file json
     with open(file_path) as f:
         report_data = f.read()
@@ -66,19 +66,19 @@ def get_reg_key (file_path):
     dictionary = json.loads(report_data)
 
     # Deleted Registry Key
-    deleted_reg_key = read_file("/var/www/basic-flask-app/static/static data/reg_key_delete.txt")
+    deleted_reg_key = read_file("/home/narimene/APP_PFE/static/static data/reg_key_delete.txt")
     deleted_reg_results = []
 
     # Opened Registry Key
-    opened_reg_key = read_file("/var/www/basic-flask-app/static/static data/reg_key_open.txt")
+    opened_reg_key = read_file("/home/narimene/APP_PFE/static/static data/reg_key_open.txt")
     opened_reg_results = []
 
     # Read Registry Key
-    read_reg_key = read_file("/var/www/basic-flask-app/static/static data/reg_key_read.txt")
+    read_reg_key = read_file("/home/narimene/APP_PFE/static/static data/reg_key_read.txt")
     read_reg_results = []
 
     # Write Registry Key
-    write_reg_key = read_file("/var/www/basic-flask-app/static/static data/reg_key_written.txt")
+    write_reg_key = read_file("/home/narimene/APP_PFE/static/static data/reg_key_written.txt")
     write_reg_results = []
 
     # Opened - Read - written
@@ -191,32 +191,32 @@ def get_file_and_dir_key (file_path):
     # Files // Files extensions : deleted - opened - read - write ~
     
     # Deleted Files
-    deleted_files = read_file("/var/www/basic-flask-app/static/static data/files_deleted.txt")
-    files_ext_deleted = read_file("/var/www/basic-flask-app/static/static data/files_exet_delete.txt")
+    deleted_files = read_file("/home/narimene/APP_PFE/static/static data/files_deleted.txt")
+    files_ext_deleted = read_file("/home/narimene/APP_PFE/static/static data/files_exet_delete.txt")
     deleted_files_results = []
     files_ext_deleted_results = []
 
     # Opened Files
-    opened_files = read_file("/var/www/basic-flask-app/static/static data/files_opened.txt")
-    files_ext_opened = read_file("/var/www/basic-flask-app/static/static data/files_exet_open.txt")
+    opened_files = read_file("/home/narimene/APP_PFE/static/static data/files_opened.txt")
+    files_ext_opened = read_file("/home/narimene/APP_PFE/static/static data/files_exet_open.txt")
     opened_files_results = []
     files_ext_opened_results = []
 
     # Read Files
-    read_files = read_file("/var/www/basic-flask-app/static/static data/files_read.txt")
-    files_ext_read = read_file("/var/www/basic-flask-app/static/static data/files_exet_read.txt")
+    read_files = read_file("/home/narimene/APP_PFE/static/static data/files_read.txt")
+    files_ext_read = read_file("/home/narimene/APP_PFE/static/static data/files_exet_read.txt")
     read_files_results = []
     files_ext_read_results = []
 
     # Write Files
-    write_files_key = read_file("/var/www/basic-flask-app/static/static data/files_write.txt")
-    files_ext_write = read_file("/var/www/basic-flask-app/static/static data/files_exet_write.txt")
+    write_files_key = read_file("/home/narimene/APP_PFE/static/static data/files_write.txt")
+    files_ext_write = read_file("/home/narimene/APP_PFE/static/static data/files_exet_write.txt")
     write_files_results = []
     files_ext_write_results = []
 
     # Folders // pathways
-    created_folder = read_file("/var/www/basic-flask-app/static/static data/dir_created.txt")
-    enum_folder = read_file("/var/www/basic-flask-app/static/static data/dir_enum.txt")
+    created_folder = read_file("/home/narimene/APP_PFE/static/static data/dir_created.txt")
+    enum_folder = read_file("/home/narimene/APP_PFE/static/static data/dir_enum.txt")
     created_folder_results_1 = []
     created_folder_results_2 = []
     created_folder_results_3 = []
@@ -574,7 +574,7 @@ def extracting_info_for_ml(file_path,json_files,str_file):
         _final_liste_results.append(i)
     
     # Extraction Strings files information using hexdump
-    found_str = get_str_from_str(str_file,"/var/www/basic-flask-app/static/static data/strings_files_static.txt")
+    found_str = get_str_from_str(str_file,"/home/narimene/APP_PFE/static/static data/strings_files_static.txt")
     for i in found_str:
         _final_liste_results.append(i)
     

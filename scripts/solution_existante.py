@@ -113,7 +113,7 @@ def analyze_by_intezer(hash_id):
         return True
     
 def solution_deja_existante(filename):
-    os.chdir("/var/www/basic-flask-app/static/uploads")
+    os.chdir("/home/narimene/APP_PFE/static/uploads")
     exe_file = load_and_read_exe(filename)
     with open(load_and_read_json()) as f:
         report_data = f.read()

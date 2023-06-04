@@ -21,7 +21,7 @@ warnings.filterwarnings(action="ignore")
 
 def preprocessing():
     # open the datasets :
-    os.chdir('/var/www/basic-flask-app/static/datasets_ml')
+    os.chdir('/home/narimene/APP_PFE/static/datasets_ml')
     all_files = []
     current_dir = os.getcwd()
     for root, dirs, files in os.walk(current_dir):
@@ -43,8 +43,8 @@ def preprocessing():
     df.drop_duplicates(keep='last')
 
     # save the new datasets into new csv file :
-    #os.chdir('/var/www/basic-flask-app/static/datasets_ml')
-    df.to_csv("/var/www/basic-flask-app/static/datasets_ml/df_clear.csv")
+    #os.chdir('/home/narimene/APP_PFE/static/datasets_ml')
+    df.to_csv("/home/narimene/APP_PFE/static/datasets_ml/df_clear.csv")
 
 """### Add a new to test and see the results"""
 def add_new_test(rf,y_pred,X_new):
@@ -67,7 +67,7 @@ def add_new_test(rf,y_pred,X_new):
 
 def get_all_files():
     all_files = []
-    os.chdir('/var/www/basic-flask-app/static/uploads')
+    os.chdir('/home/narimene/APP_PFE/static/uploads')
     current_dir = os.getcwd()
     #print(current_dir)
     for root, dirs, files in os.walk(current_dir):
@@ -121,8 +121,8 @@ def get_data_from_json_file():
 def append_into_csv_file(nd):
     #if not check_contient(nd):
         # open the CSV file in append mode
-    #os.chdir('/var/www/basic-flask-app/static/datasets_ml')
-    with open("/var/www/basic-flask-app/static/datasets_ml/df_clear.csv", "r", newline="") as file:
+    #os.chdir('/home/narimene/APP_PFE/static/datasets_ml')
+    with open("/home/narimene/APP_PFE/static/datasets_ml/df_clear.csv", "r", newline="") as file:
         reader = csv.reader(file)
         last_row = list(reader)[-1]
     id = int(last_row[0]) + 1
@@ -131,17 +131,17 @@ def append_into_csv_file(nd):
     new_list_to_append.append(id)
     for i in nd:
         new_list_to_append.append(i)
-    with open("/var/www/basic-flask-app/static/datasets_ml/df_clear.csv", "a", newline="") as file:
+    with open("/home/narimene/APP_PFE/static/datasets_ml/df_clear.csv", "a", newline="") as file:
         # create a writer object
         writer = csv.writer(file)
 
         # append the new row to the CSV file
         writer.writerow(new_list_to_append)
-    df = pd.read_csv("/var/www/basic-flask-app/static/datasets_ml/df_clear.csv")
+    df = pd.read_csv("/home/narimene/APP_PFE/static/datasets_ml/df_clear.csv")
     df = df.drop(df.columns[0], axis=1)
     # subset=["Machine","DebugSize","DebugRVA","MajorImageVersion","MajorOSVersion","ExportRVA","ExportSize","IatVRA","MajorLinkerVersion","MinorLinkerVersion","NumberOfSections","SizeOfStackReserve","DllCharacteristics","ResourceSize","BitcoinAddresses","Benign"],
     df = df.drop_duplicates(keep='last')
-    df.to_csv("/var/www/basic-flask-app/static/datasets_ml/df_clear.csv")
+    df.to_csv("/home/narimene/APP_PFE/static/datasets_ml/df_clear.csv")
 
 
 def start_ml_analysis():
@@ -149,8 +149,8 @@ def start_ml_analysis():
     #preprocessing()
 
     """### Prepare our dataset after preprocessing"""
-    #os.chdir('/var/www/basic-flask-app/static/datasets_ml')
-    df = pd.read_csv("/var/www/basic-flask-app/static/datasets_ml/df_clear.csv")
+    #os.chdir('/home/narimene/APP_PFE/static/datasets_ml')
+    df = pd.read_csv("/home/narimene/APP_PFE/static/datasets_ml/df_clear.csv")
     
     # Transoform into List : 
     X = df.iloc[:, 1:-1].values
@@ -182,7 +182,7 @@ def start_ml_analysis():
     # append the data into the csv file
     #append_into_csv_file(results_)
     print("["+str(now)+"]~ The prediction using machine learnig by Random-Forest has been done successful!")
-    os.chdir('/var/www/basic-flask-app/static/uploads')
+    os.chdir('/home/narimene/APP_PFE/static/uploads')
     return s
 
 #Copyright 02-25-2023 ~ Boussoura Mohamed Cherif & Houanti Narimene ~ Machine learning script for ransomware prediction and detection using random tree and open source datasets from Kaggle : https://www.kaggle.com/datasets/amdj3dax/ransomware-detection-data-set

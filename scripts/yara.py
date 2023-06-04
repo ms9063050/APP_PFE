@@ -3,7 +3,7 @@ now = datetime.datetime.now()
 
 # Get all YARA rule files
 def get_all_rules():
-    return [os.path.join(root, file) for root, dirs, files in os.walk('/var/www/basic-flask-app/static/rules') for file in files if file.endswith('.yar')]
+    return [os.path.join(root, file) for root, dirs, files in os.walk('/home/narimene/APP_PFE/static/rules') for file in files if file.endswith('.yar')]
 
 
 def analyse_with_yara(rule_path, file_path):
@@ -46,4 +46,4 @@ def Yara_analyse(file_path):
     return result
 
 def get_executable_to_analyse():
-    return next(os.path.join(root, file) for root, dirs, files in os.walk('/var/www/basic-flask-app/static/uploads') for file in files if file.endswith('.exe'))
+    return next(os.path.join(root, file) for root, dirs, files in os.walk('/home/narimene/APP_PFE/static/uploads') for file in files if file.endswith('.exe'))

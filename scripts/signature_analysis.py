@@ -4,7 +4,7 @@ now = datetime.datetime.now()
 
 def get_all_files():
     all_files = []
-    os.chdir('/var/www/basic-flask-app/static/uploads')
+    os.chdir('/home/narimene/APP_PFE/static/uploads')
     current_dir = os.getcwd()
     for root, dirs, files in os.walk(current_dir):
         for file in files:
@@ -24,7 +24,7 @@ def load_and_read_json():
     return data
 
 def Ransomware_Detection_Based_File_Family(file_path,file_hash):
-    os.chdir('/var/www/basic-flask-app/static/datasets')
+    os.chdir('/home/narimene/APP_PFE/static/datasets')
     all_files = []
     current_dir = os.getcwd()
     for root, dirs, files in os.walk(current_dir):
@@ -50,6 +50,6 @@ def start_signature_analysis():
         else:
             #print("The file analysed is a Ransomware file!")
             a = False
-    os.chdir('//var/www/basic-flask-app/static/uploads')
+    os.chdir('//home/narimene/APP_PFE/static/uploads')
     return a
 #Copyright 02-25-2023 ~ Boussoura Mohamed Cherif & Houanti Narimene

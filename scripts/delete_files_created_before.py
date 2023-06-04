@@ -11,7 +11,7 @@ def get_all_files():
     return all_files
 
 def delete_all(filename):
-    os.chdir("/var/www/basic-flask-app/static/uploads")
+    os.chdir("/home/narimene/APP_PFE/static/uploads")
     for file in get_all_files():
         try:
             if ".exe" in file:
@@ -30,6 +30,6 @@ def delete_all(filename):
             except OSError as e:
                 print(f'Error deleting {file}: {e.strerror}')
     print("["+str(now)+"]~ Done!!! - ALL FILES HAS BEEN DELETED")
-    os.chdir('/var/www/basic-flask-app')
+    os.chdir('/home/narimene/APP_PFE')
 
 #Copyright 02-25-2023 ~ Boussoura Mohamed Cherif & Houanti Narimene

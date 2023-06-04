@@ -94,7 +94,7 @@ def draw_graph(hash_file):
         driver.get(url)
         driver.execute_script("document.body.style.zoom='121%'")
         time.sleep(20)
-        driver.save_screenshot('/var/www/basic-flask-app/static/uploads/screenshot.png')
+        driver.save_screenshot('/home/narimene/APP_PFE/static/uploads/screenshot.png')
         driver.quit()
 
         _end = time.time()
@@ -154,7 +154,7 @@ def get_png_of_graph():
     print("error")
 
 def get_pdf():
-    directory = '/var/www/basic-flask-app/archive'
+    directory = '/home/narimene/APP_PFE/archive'
     files = os.listdir(directory)
     paths = [os.path.join(directory, file) for file in files]
     last_updated_path = max(paths, key=os.path.getmtime)
@@ -162,7 +162,7 @@ def get_pdf():
 
 # Create a function that generates a PDF report
 def generate_report(data,s,familly,filename):
-    os.chdir("/var/www/basic-flask-app/static/uploads")
+    os.chdir("/home/narimene/APP_PFE/static/uploads")
     json_file = load_and_read_json2()
     with open(json_file) as f:
         report_data = f.read()
@@ -193,7 +193,7 @@ def generate_report(data,s,familly,filename):
     score, total = score_rate(data)
     draw_score_rate([score,total-score])
     # Draw the PNG file on the PDF
-    pdf_file.drawImage('/var/www/basic-flask-app/static/uploads/malware_scores.png', 100, 320, 400, 250)
+    pdf_file.drawImage('/home/narimene/APP_PFE/static/uploads/malware_scores.png', 100, 320, 400, 250)
     # Informations about file
     pdf_file.setFont("Helvetica-Bold", 14)
     pdf_file.drawString(50, 270, "Information related about file")

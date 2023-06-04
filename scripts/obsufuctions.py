@@ -235,7 +235,7 @@ def fonction_vms(filepath):
         return True
 
 def Obsufuctions_Analysis(filename):
-    os.chdir("/var/www/basic-flask-app/static/uploads")
+    os.chdir("/home/narimene/APP_PFE/static/uploads")
     get_exe_ , get_strings_ = load_and_read_exe_strings(filename)
     print("["+str(now)+"]~ The Obsufuction of the file has been done successful!")
     return entropie_test(get_exe_),algo_crypt(get_strings_,get_exe_),fonction_antiDebugg(get_exe_),fonction_vms(get_exe_)

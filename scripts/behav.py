@@ -3708,7 +3708,7 @@ def check_for_TeslaCrypt_behaviors(json_file):
     return total
 
 def generate_json(filename):
-    os.chdir('/var/www/basic-flask-app/static/uploads')
+    os.chdir('/home/narimene/APP_PFE/static/uploads')
     json_file = load_and_read_json()
     exe_file = load_and_read_exe(filename)
     with open(json_file) as f:
@@ -3719,7 +3719,7 @@ def generate_json(filename):
 
 def behav_analysis(filename):
     ALL_DATA_HERE = {}
-    os.chdir('/var/www/basic-flask-app/static/uploads')
+    os.chdir('/home/narimene/APP_PFE/static/uploads')
     json_file = load_and_read_json2()
     if not Exeception_length(json_file):
         if not Exception_Verdicts(json_file):
